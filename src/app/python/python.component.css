@@ -1,0 +1,30 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+    text-align: center;
+}
+.code-background{
+    background-color: black; 
+    color: white;
+}
+.code-header{
+    background-color: rgb(49, 48, 48); 
+    height: 30px;
+}
+.code-html{
+    margin: 5px;
+}
+.copy-code-span{
+    float: right;
+}
+.button-copy{
+    background-color: rgb(49, 48, 48); 
+    border: none; 
+    color: white;
+}
+.code{
+    margin: 10px 20px 10px 20px; 
+    padding-bottom: 5px;
+}
