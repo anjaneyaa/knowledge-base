@@ -1,0 +1,15 @@
+.code-header{
+    background-color: rgb(49, 48, 48); 
+    height: 30px;
+}
+.code-html{
+    margin: 5px;
+}
+.copy-code-span{
+    float: right;
+}
+.button-copy{
+    background-color: rgb(49, 48, 48); 
+    border: none; 
+    color: white;
+}
