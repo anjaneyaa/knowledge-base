@@ -1,4 +1,12 @@
 <h2>Python Topics and Concepts!!!</h2><br />
+<div class="terminal">
+    <pre >ng generate component xyz</pre>
+    <pre >ng add @angular/material</pre>
+    <pre >ng add @angular/pwa</pre>
+    <pre >ng add _____</pre>
+    <pre >ng test</pre>
+    <pre >ng build</pre>
+</div>
 <div class="container">
     <section>
         <h5>Here are some of the main topics in Python programming: </h5>
@@ -94,17 +102,15 @@
                 Requests.
             </li>
         </ol>
-    </section>
-    <ng-template #codeHeader>
-        <section class="code-header">
-            <div class="code-html">
-                <span>python</span>
-                <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
-                        code</button></span>
-            </div>
-        </section>
-    </ng-template>
-    <section>
+        <ng-template #codeHeader>
+            <section class="code-header">
+                <div class="code-html">
+                    <span>python</span>
+                    <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                            code</button></span>
+                </div>
+            </section>
+        </ng-template>
         <h5><strong>Basic Syntax and Data Types in Python</strong></h5>
         <ol>
             <li>
@@ -164,8 +170,6 @@
                 </div>
             </div>
         </ol>
-    </section>
-    <section>
         <h5><strong>Control Structures in Python</strong></h5>
         <p>Control structures in Python allow you to control the flow of your program. Here are the main control
             structures:</p>
@@ -222,9 +226,6 @@
                 repeat actions as needed.</p>
 
         </ol>
-    </section>
-
-    <section>
         <h5><strong>Functions in Python</strong></h5>
         <p>Functions in Python are reusable blocks of code that perform specific tasks. They help organize code,
             make it
@@ -298,6 +299,1820 @@ demo_scope()</code></pre>
             <p>Functions are a fundamental building block of Python programming, allowing you to create more
                 organized,
                 reusable, and maintainable code.</p>
+        </ol>
+        <h5><strong>Built-In Data Structures in Python</strong></h5>
+        <p>Python offers several built-in data structures that help you organize and manipulate data efficiently.
+            Here
+            are some of the main data structures:</p>
+        <ol>
+            <li><strong>Lists</strong></li>
+            <p>Ordered, mutable collections of items.</p>
+            <pre><code>my_list = [1, 2, 3, 4]
+my_list.append(5)
+my_list.pop(2)</code></pre>
+
+            <li><strong>Tuples</strong></li>
+            <p>Ordered, immutable collections of items.</p>
+            <pre><code>my_tuple = (1, 2, 3)
+value = my_tuple[1]</code></pre>
+
+            <li><strong>Sets</strong></li>
+            <p>Unordered collections of unique items.</p>
+            <pre><code [innerHTML]="my_sets"></code></pre>
+
+            <li><strong>Dictionaries</strong></li>
+            <p>Unordered collections of key-value pairs.</p>
+            <pre><code [innerHTML]="my_dicts"></code></pre>
+
+            <li><strong>Strings</strong></li>
+            <p>Sequences of characters.</p>
+            <pre><code>my_string = "Hello, Python"
+substring = my_string[7:13]</code></pre>
+
+            <li><strong>Lists of Lists (Nested Lists)</strong></li>
+            <p>Creating lists that contain other lists.</p>
+            <pre><code>matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+value = matrix[1][2]</code></pre>
+
+            <li><strong>List Comprehensions</strong></li>
+            <p>Creating lists using a compact syntax.</p>
+            <pre><code>squares = [x ** 2 for x in range(1, 6)]</code></pre>
+
+            <li><strong>Dictionaries of Dictionaries (Nested Dictionaries)</strong></li>
+            <p>Creating dictionaries that contain other dictionaries.</p>
+            <pre><code [innerHTML]="users"></code></pre>
+            <li><strong>Sets and Frozensets</strong></li>
+            <p>Sets are mutable, while frozensets are immutable sets.</p>
+            <pre><code [innerHTML]="frozenset"></code></pre>
+
+            <li><strong>Deque</strong></li>
+            <p>Double-ended queue for efficient insertion and deletion from both ends.</p>
+            <pre><code>&lt;!-- Make sure to include the Python code --&gt;</code></pre>
+
+            <p>These data structures provide different ways to store and manipulate data, making Python versatile
+                for a
+                wide
+                range of programming tasks.</p>
+        </ol>
+        <h5><strong>String Manipulation in Python</strong></h5>
+        <p>String manipulation in Python involves various operations to work with and manipulate strings. Here are
+            some
+            common string manipulation techniques:</p>
+        <ol>
+            <li><strong>Concatenation</strong></li>
+            <p>Combining strings together.</p>
+            <pre><code>str1 = "Hello"
+str2 = "World"
+result = str1 + " " + str2</code></pre>
+
+            <li><strong>String Formatting</strong></li>
+            <p>Creating formatted strings using placeholders.</p>
+            <pre><code [innerHTML]="formatted_strings"></code></pre>
+
+            <li><strong>String Methods</strong></li>
+            <p>Python provides a wide range of string methods for various operations.</p>
+            <pre><code>my_string = "Hello, Python!"
+length = len(my_string)
+uppercase = my_string.upper()
+lowercase = my_string.lower()</code></pre>
+
+            <li><strong>String Slicing</strong></li>
+            <p>Extracting portions of a string.</p>
+            <pre><code>my_string = "Hello, Python!"
+substring = my_string[7:13]  // Extracts "Python"</code></pre>
+
+            <li><strong>String Splitting and Joining</strong></li>
+            <pre><code>my_string = "apple,banana,orange"
+fruits_list = my_string.split(",")
+
+fruits = ["apple", "banana", "orange"]
+joined_string = "-".join(fruits)</code></pre>
+
+            <li><strong>Stripping Whitespaces</strong></li>
+            <pre><code>my_string = "   Hello, Python!   "
+stripped_string = my_string.strip()  // Removes leading and trailing whitespaces</code></pre>
+
+            <li><strong>Replacing Substrings</strong></li>
+            <pre><code>my_string = "Hello, World!"
+new_string = my_string.replace("World", "Python")</code></pre>
+
+            <li><strong>Checking Substrings</strong></li>
+            <pre><code>my_string = "Hello, Python!"
+contains_python = "Python" in my_string</code></pre>
+
+            <li><strong>String Formatting (f-strings) (Python 3.6+)</strong></li>
+            <pre><code [innerHTML]="string_formatting"></code></pre>
+
+            <p>String manipulation is essential for working with textual data and is used extensively in
+                applications
+                ranging from data processing to web development.</p>
+        </ol>
+        <h5><strong>File Handling in Python</strong></h5>
+        <p>File handling in Python allows you to work with files, both for reading and writing data. Here's how you
+            can
+            use file handling operations:</p>
+
+        <ol>
+            <li><strong>Opening a File</strong></li>
+            <p>To work with a file, you need to open it using the <code>open()</code> function. You specify the file
+                name
+                and the mode in which you want to open the file (read, write, or both).</p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code># Opening a file for reading
+file = open("example.txt", "r")
+
+# Opening a file for writing
+file = open("output.txt", "w")</code></pre>
+                </div>
+            </div>
+
+            <li><strong>Reading from a File</strong></li>
+            <p>You can read the contents of a file using methods like <code>read()</code>, <code>readline()</code>,
+                or
+                <code>readlines()</code>.
+            </p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code># Reading the entire content
+content = file.read()
+
+# Reading one line
+line = file.readline()
+
+# Reading all lines into a list
+lines = file.readlines()</code></pre>
+                </div>
+            </div>
+
+            <li><strong>Writing to a File</strong></li>
+            <p>You can write to a file using methods like <code>write()</code>.</p>
+            <pre><code># Writing a string to the file
+file.write("Hello, world!")</code></pre>
+
+            <li><strong>Closing a File</strong></li>
+            <p>It's important to close the file after you're done working with it to free up system resources.</p>
+            <pre><code>file.close()</code></pre>
+
+            <li><strong>Using 'with' Statement (Context Manager)</strong></li>
+            <p>The <code>with</code> statement ensures that the file is properly closed after you're done, even if
+                an
+                exception occurs.</p>
+            <pre><code>with open("example.txt", "r") as file:
+content = file.read()</code></pre>
+
+            <li><strong>Appending to a File</strong></li>
+            <p>To add content to an existing file without overwriting it, you can open the file in append mode
+                ("a").
+            </p>
+            <pre><code>with open("output.txt", "a") as file:
+file.write("Additional content")</code></pre>
+
+            <p>File handling is a fundamental aspect of programming for tasks involving data storage, retrieval, and
+                manipulation. Always make sure to properly close the file after you're done with it to avoid
+                resource
+                leaks.
+            </p>
+        </ol>
+        <h5><strong>Exception Handling in Python</strong></h5>
+        <p>Exception handling in Python allows you to handle errors and exceptions gracefully, preventing your
+            program
+            from crashing. Here's how you can use exception handling:</p>
+
+        <ol>
+            <li><strong>Try-Except Block</strong></li>
+            <p>Use a <code>try</code> block to enclose the code that might raise an exception. If an exception
+                occurs,
+                the
+                code in the corresponding <code>except</code> block will be executed.</p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code>try:
+# Code that might raise an exception
+result = 10 / 0
+except ZeroDivisionError:
+# Code to handle the exception
+print("Division by zero error")</code></pre>
+                </div>
+            </div>
+
+            <li><strong>Multiple Except Blocks</strong></li>
+            <p>You can handle different types of exceptions with multiple <code>except</code> blocks.</p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code>try:
+value = int("abc")
+except ValueError:
+print("ValueError occurred")
+except ZeroDivisionError:
+print("ZeroDivisionError occurred")</code></pre>
+                </div>
+            </div>
+
+            <li><strong>Exception with an Else Block</strong></li>
+            <p>You can use an <code>else</code> block to execute code when no exception occurs.</p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code>try:
+x = 10 / 2
+except ZeroDivisionError:
+print("Cannot divide by zero")
+else:
+print("Result:", x)</code></pre>
+                </div>
+            </div>
+
+            <li><strong>Exception with a Finally Block</strong></li>
+            <p>The <code>finally</code> block always executes, whether an exception occurred or not. It's commonly
+                used
+                to
+                release resources.</p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code>try:
+file = open("example.txt", "r")
+content = file.read()
+except FileNotFoundError:
+print("File not found")
+finally:
+file.close()</code></pre>
+                </div>
+            </div>
+
+            <li><strong>Raising Exceptions</strong></li>
+            <p>You can manually raise exceptions using the <code>raise</code> statement.</p>
+            <pre><code>def divide(a, b):
+if b == 0:
+    raise ZeroDivisionError("Division by zero is not allowed")
+return a / b</code></pre>
+
+            <li><strong>Custom Exception Classes</strong></li>
+            <p>You can define your own custom exception classes by subclassing built-in exceptions or the
+                <code>Exception</code> class.
+            </p>
+            <pre><code>class CustomError(Exception):
+def __init__(self, message):
+    self.message = message</code></pre>
+
+            <p>Exception handling allows you to anticipate and handle errors, making your code more robust and
+                user-friendly. It's crucial for creating reliable programs that can gracefully handle unexpected
+                situations.
+            </p>
+        </ol>
+    </section>
+    <section>
+        <h5><strong>Object-Oriented Programming in Python</strong></h5>
+        <p>Object-Oriented Programming (OOP) is a programming paradigm that focuses on organizing code around
+            objects,
+            which are instances of classes. Python is an object-oriented language, and here's how you can work with
+            OOP
+            concepts:</p>
+
+        <ol>
+            <li><strong>Classes and Objects</strong></li>
+            <p><strong>Class:</strong> A blueprint or template for creating objects. It defines attributes (data)
+                and
+                methods (functions) that the objects will have.</p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code [innerHTML]="class_Person"></code></pre>
+                </div>
+            </div>
+            <p><strong>Object:</strong> An instance of a class with its own unique data and behavior.</p>
+            <pre><code>person1 = Person("Alice", 30)
+person2 = Person("Bob", 25)
+
+print(person1.greet())  // Output: Hello, my name is Alice and I am 30 years old.</code></pre>
+
+            <li><strong>Attributes and Methods</strong></li>
+            <p><strong>Attributes:</strong> Variables that belong to an object and store its data.</p>
+            <p><strong>Methods:</strong> Functions defined within a class that can be called on objects of that
+                class.
+            </p>
+
+            <li><strong>Constructor (`__init__`)</strong></li>
+            <p>The <code>__init__</code> method is used to initialize object attributes when an object is created.
+            </p>
+            <pre><code>def __init__(self, attribute1, attribute2):
+self.attribute1 = attribute1
+self.attribute2 = attribute2</code></pre>
+
+            <li><strong>Inheritance</strong></li>
+            <p>Inheritance allows a class (subclass/derived class) to inherit attributes and methods from another
+                class
+                (base class/superclass).</p>
+            <pre><code>class Student(Person):
+def __init__(self, name, age, student_id):
+    super().__init__(name, age)
+    self.student_id = student_id</code></pre>
+
+            <li><strong>Encapsulation</strong></li>
+            <p>Encapsulation restricts direct access to certain attributes and methods, promoting data hiding and
+                abstraction.</p>
+
+            <li><strong>Polymorphism</strong></li>
+            <p>Polymorphism allows objects of different classes to be treated as objects of a common superclass. It
+                enables
+                method overriding and dynamic method binding.</p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code>class Shape:
+def area(self):
+    pass
+
+class Circle(Shape):
+def area(self, radius):
+    return 3.14 * radius ** 2
+
+class Rectangle(Shape):
+def area(self, length, width):
+    return length * width</code></pre>
+                </div>
+            </div>
+
+            <li><strong>Abstraction</strong></li>
+            <p>Abstraction focuses on providing a simplified interface for interacting with objects, hiding complex
+                implementation details.</p>
+
+            <p>OOP provides a structured and modular approach to programming, making code more organized,
+                maintainable,
+                and
+                reusable. It models real-world concepts effectively and encourages better problem-solving through
+                encapsulation and abstraction.</p>
+        </ol>
+    </section>
+    <section>
+        <h5><strong>Modules and Packages in Python</strong></h5>
+        <p>Modules and packages are key concepts in Python that help organize code into reusable and manageable
+            components. Here's how they work:</p>
+
+        <ol>
+            <li><strong>Modules</strong></li>
+            <p>A module is a single Python file containing variables, functions, and classes that can be imported
+                and
+                used
+                in other programs.</p>
+            <p>Create a module by writing your code in a <code>.py</code> file, e.g., <code>my_module.py</code>.</p>
+            <pre><code [innerHTML]="my_module"></code></pre>
+            <p>Import and use functions/classes from the module in another file.</p>
+            <pre><code>import my_module
+
+result = my_module.add(3, 5)
+greeting = my_module.greet("Alice")</code></pre>
+
+            <li><strong>Packages</strong></li>
+            <p>A package is a collection of related modules organized in directories. It allows for a hierarchical
+                structure
+                to manage larger projects.</p>
+            <p>Create a directory for your package and include an <code>__init__.py</code> file in it.</p>
+            <pre><code>my_package/
+__init__.py
+module1.py
+module2.py</code></pre>
+            <p>Import modules from the package using dot notation.</p>
+            <pre><code>import my_package.module1
+result = my_package.module1.add(3, 5)</code></pre>
+            <p>You can also use the <code>from ... import ...</code> syntax.</p>
+            <pre><code>from my_package import module2
+greeting = module2.greet("Bob")</code></pre>
+
+            <li><strong><code>__init__.py</code></strong></li>
+            <p>The <code>__init__.py</code> file in a package directory can be left empty or contain initialization
+                code
+                for
+                the package.</p>
+
+            <li><strong>Subpackages</strong></li>
+            <p>Packages can have subpackages, allowing you to organize modules further.</p>
+            <pre><code>my_package/
+__init__.py
+module1.py
+subpackage/
+    __init__.py
+    module3.py</code></pre>
+            <pre><code>from my_package.subpackage import module3
+result = module3.multiply(4, 6)</code></pre>
+
+            <p>Modules and packages promote code reusability, maintainability, and separation of concerns. They are
+                crucial
+                for structuring larger projects and making code more organized and manageable.</p>
+        </ol>
+    </section>
+    <section>
+        <h5><strong>Regular Expressions in Python</strong></h5>
+        <p>Regular expressions (regex) are powerful tools for pattern matching and manipulation of strings in
+            Python.
+            They allow you to search for, match, and manipulate text based on specific patterns. Here's how you can
+            use
+            regular expressions in Python:</p>
+
+        <ol>
+            <li><strong>Importing the <code>re</code> Module</strong></li>
+            <p>To use regular expressions, you need to import the <code>re</code> module.</p>
+            <pre><code>import re</code></pre>
+
+            <li><strong>Basic Matching</strong></li>
+            <p>You can use the <code>re.search()</code> function to find the first occurrence of a pattern in a
+                string.
+            </p>
+            <pre><code>pattern = r"world"
+text = "Hello, world!"
+match = re.search(pattern, text)
+if match:
+print("Pattern found:", match.group())</code></pre>
+
+            <li><strong>Pattern Modifiers</strong></li>
+            <ul>
+                <li><strong><code>r"`string`"</code>: Use raw strings to avoid escaping backslashes.</strong></li>
+                <li><strong><code>re.I</code> (case-insensitive): Use <code>re.search(pattern, text, re.I)</code> to
+                        make
+                        the search
+                        case-insensitive.</strong></li>
+            </ul>
+
+            <li><strong>Character Classes</strong></li>
+            <ul>
+                <li><strong><code>[abc]</code>: Match any of the characters a, b, or c.</strong></li>
+                <li><strong><code>[a-z]</code>: Match any lowercase letter.</strong></li>
+                <li><strong><code>[0-9]</code>: Match any digit.</strong></li>
+            </ul>
+
+            <li><strong>Special Characters</strong></li>
+            <ul>
+                <li><strong><code>\d</code>: Match any digit (0-9).</strong></li>
+                <li><strong><code>\w</code>: Match any alphanumeric character.</strong></li>
+                <li><strong><code>\s</code>: Match any whitespace character.</strong></li>
+            </ul>
+
+            <li><strong>Quantifiers</strong></li>
+            <ul>
+                <li><strong><code>*</code>: Match zero or more occurrences.</strong></li>
+                <li><strong><code>+</code>: Match one or more occurrences.</strong></li>
+                <li><strong><code>?</code>: Match zero or one occurrence.</strong></li>
+                <li><strong><code [innerHTML]="n_occurrences"></code>: Match exactly n occurrences.</strong></li>
+                <li><strong><code [innerHTML]="n_and_m_occurrences"></code>: Match between n and m occurrences.</strong>
+                </li>
+            </ul>
+
+            <li><strong>Anchors</strong></li>
+            <ul>
+                <li><strong><code>^</code>: Match the start of a string.</strong></li>
+                <li><strong><code>$</code>: Match the end of a string.</strong></li>
+            </ul>
+
+            <li><strong>Groups and Capturing</strong></li>
+            <p>Use parentheses to create capturing groups.</p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code [innerHTML]="pattern"></code></pre>
+                </div>
+            </div>
+
+            <li><strong>Substitution</strong></li>
+            <p>You can use <code>re.sub()</code> to replace matched patterns with other text.</p>
+            <pre><code>pattern = r"\bapple\b"
+text = "I like apple and pineapple."
+new_text = re.sub(pattern, "orange", text)</code></pre>
+
+            <p>Regular expressions provide a versatile way to work with text data, making it easier to perform
+                complex
+                searches and manipulations in strings. However, they can be complex, so practice and documentation
+                are
+                essential for mastering them.</p>
+        </ol>
+    </section>
+    <section>
+        <h5><strong>Advanced Data Structures in Python</strong></h5>
+        <p>Python offers advanced data structures beyond the basic ones like lists, tuples, and dictionaries. Here
+            are a
+            few advanced data structures you might find useful:</p>
+
+        <ol>
+            <li><strong>Sets with Set Operations</strong></li>
+            <p>Sets are collections of unique elements. Python's <code>set</code> class supports set operations like
+                union,
+                intersection, and difference.</p>
+            <pre><code [innerHTML]="sets"></code></pre>
+
+            <li><strong>Defaultdict and Counter from Collections</strong></li>
+            <p>The <code>collections</code> module offers useful data structures like <code>defaultdict</code> and
+                <code>Counter</code>.
+            </p>
+            <ul>
+                <li><strong><code>defaultdict</code>: A dictionary that automatically creates default values for
+                        missing
+                        keys.</strong></li>
+                <pre><code>from collections import defaultdict
+
+d = defaultdict(int)
+d['a'] += 1</code></pre>
+                <li><strong><code>Counter</code>: A dictionary for counting hashable objects.</strong></li>
+                <pre><code>from collections import Counter
+
+c = Counter(['a', 'b', 'a', 'c', 'b'])
+most_common = c.most_common(2)</code></pre>
+            </ul>
+
+            <li><strong>OrderedDict</strong></li>
+            <p><code>OrderedDict</code> maintains the order of keys as they were inserted.</p>
+            <pre><code>from collections import OrderedDict
+
+d = OrderedDict()
+d['one'] = 1
+d['two'] = 2</code></pre>
+
+            <li><strong>Namedtuple</strong></li>
+            <p><code>Namedtuple</code> creates a simple class with named fields, providing a more readable
+                alternative
+                to
+                regular tuples.</p>
+            <pre><code>from collections import namedtuple
+
+Point = namedtuple('Point', ['x', 'y'])
+p = Point(1, 2)</code></pre>
+
+            <li><strong>Deque</strong></li>
+            <p><code>Deque</code> (double-ended queue) supports efficient append and pop operations on both ends.
+            </p>
+            <pre><code>from collections import deque
+
+d = deque([1, 2, 3])
+d.append(4)
+d.popleft()</code></pre>
+
+            <li><strong>Heaps from heapq</strong></li>
+            <p>The <code>heapq</code> module provides functions for heap operations. A heap is a binary tree-based
+                data
+                structure that maintains the heap property.</p>
+            <pre><code>import heapq
+
+heap = [3, 1, 4, 1, 5, 9, 2]
+heapq.heapify(heap)   # Convert list into a heap
+smallest = heapq.heappop(heap)</code></pre>
+
+            <p>These advanced data structures offer specialized functionalities and performance improvements for
+                various
+                programming scenarios. Understanding and using them can lead to more efficient and organized code.
+            </p>
+        </ol>
+    </section>
+    <section>
+        <h5><strong>Advanced Topics in Python</strong></h5>
+        <p>Here are some advanced topics in Python that go beyond the basics:</p>
+
+        <ol>
+            <li><strong>Decorators</strong></li>
+            <p>Decorators are functions that modify or enhance the behavior of other functions. They are often used
+                for
+                adding functionality like logging, authentication, or measuring execution time.</p>
+
+            <li><strong>Generators</strong></li>
+            <p>Generators are a memory-efficient way to create iterators. They allow you to iterate over large
+                sequences
+                without storing the entire sequence in memory at once.</p>
+
+            <li><strong>Iterators and Iterables</strong></li>
+            <p>Iterators are objects that implement the methods <code>__iter__()</code> and <code>__next__()</code>.
+                Iterables are objects that can be iterated over, like lists or tuples.</p>
+
+            <li><strong>Context Managers</strong></li>
+            <p>Context managers, implemented using the <code>with</code> statement, allow you to manage resources
+                and
+                perform setup/teardown operations automatically, like opening/closing files.</p>
+
+            <li><strong>Metaclasses</strong></li>
+            <p>Metaclasses define the behavior of classes. They allow you to control how classes are created and
+                provide
+                a
+                way to modify class behavior globally.</p>
+
+            <li><strong>Concurrency and Multithreading</strong></li>
+            <p>Python offers threading and multiprocessing libraries for handling concurrency. The
+                <code>threading</code>
+                module provides threads, while the <code>multiprocessing</code> module offers processes for parallel
+                execution.
+            </p>
+
+            <li><strong>Coroutines and Asynchronous Programming</strong></li>
+            <p>Coroutines are functions that can be paused and resumed. Asynchronous programming with the
+                <code>asyncio</code> library allows you to write asynchronous, non-blocking code.
+            </p>
+
+            <li><strong>Memory Management</strong></li>
+            <p>Understanding memory management in Python, including reference counting, garbage collection, and
+                memory
+                optimization techniques, can help improve performance.</p>
+
+            <li><strong>Performance Optimization</strong></li>
+            <p>Techniques like profiling, memory profiling, and using specialized libraries (like NumPy for
+                numerical
+                computations) can optimize your code for speed and efficiency.</p>
+
+            <li><strong>Dynamic Typing and Type Annotations</strong></li>
+            <p>Python's dynamic typing allows you to change the type of a variable during runtime. Type annotations
+                and
+                the
+                <code>typing</code> module can help document and enforce type hints in your code.
+            </p>
+
+            <li><strong>Unicode and Internationalization</strong></li>
+            <p>Python supports Unicode natively, making it suitable for working with text in various languages and
+                character
+                encodings.</p>
+
+            <li><strong>C Extensions and Cython</strong></li>
+            <p>Python can be extended with C/C++ libraries and modules for performance-critical tasks. Cython is a
+                tool
+                that
+                allows you to write C-like code and compile it to Python extensions.</p>
+        </ol>
+        <p>These advanced topics provide a deeper understanding of Python's capabilities and allow you to write more
+            efficient, robust, and versatile code.</p>
+
+
+    </section>
+    <section>
+        <h5><strong>Python Built-in Functions and Libraries</strong></h5>
+        <p>Python comes with a rich set of built-in functions and libraries that provide a wide range of
+            functionalities. Here are some important built-in functions and commonly used libraries in Python:</p>
+
+        <li><strong>Built-in Functions</strong></li>
+        <ol>
+            <li><strong><code>print()</code>: Used to display output to the console.</strong></li>
+            <li><strong><code>len()</code>: Returns the length of an object (string, list, etc.).</strong></li>
+            <li><strong><code>input()</code>: Reads user input from the console.</strong></li>
+            <li><strong><code>range()</code>: Generates a sequence of numbers.</strong></li>
+            <li><strong><code>type()</code>: Returns the type of an object.</strong></li>
+            <li><strong><code>int()</code>, <code>float()</code>, <code>str()</code>: Convert values to specific
+                    types.</strong></li>
+            <li><strong><code>list()</code>, <code>tuple()</code>, <code>set()</code>, <code>dict()</code>: Create
+                    lists,
+                    tuples, sets, and dictionaries.</strong></li>
+            <li><strong><code>max()</code>, <code>min()</code>: Return the maximum and minimum value in a
+                    sequence.</strong></li>
+            <li><strong><code>sum()</code>: Returns the sum of a sequence of numbers.</strong></li>
+            <li><strong><code>sorted()</code>: Returns a sorted list from an iterable.</strong></li>
+        </ol>
+
+        <li><strong>Commonly Used Libraries</strong></li>
+        <ol>
+            <li><strong><code>math</code>: Provides mathematical functions and constants.</strong></li>
+            <li><strong><code>datetime</code>: Deals with dates and times.</strong></li>
+            <li><strong><code>os</code>: Interacts with the operating system (e.g., file operations).</strong></li>
+            <li><strong><code>json</code>: Allows encoding and decoding JSON data.</strong></li>
+            <li><strong><code>random</code>: Generates random numbers and sequences.</strong></li>
+            <li><strong><code>re</code>: Supports regular expressions for pattern matching.</strong></li>
+            <li><strong><code>csv</code>: Handles CSV (Comma-Separated Values) files.</strong></li>
+            <li><strong><code>requests</code>: Simplifies making HTTP requests.</strong></li>
+            <li><strong><code>numpy</code>: A powerful library for numerical computations.</strong></li>
+            <li><strong><code>pandas</code>: Used for data manipulation and analysis.</strong></li>
+            <li><strong><code>matplotlib</code> and <code>seaborn</code>: Libraries for data visualization.</strong>
+            </li>
+            <li><strong><code>tkinter</code>: Provides tools for creating graphical user interfaces.</strong></li>
+            <li><strong><code>sqlite3</code>: Used for SQLite database interaction.</strong></li>
+            <li><strong><code>unittest</code>: A framework for writing and running unit tests.</strong></li>
+            <li><strong><code>argparse</code>: Helps parse command-line arguments.</strong></li>
+        </ol>
+
+        <p>These built-in functions and libraries significantly extend Python's capabilities and allow you to
+            perform
+            various tasks efficiently without reinventing the wheel.</p>
+    </section>
+    <section>
+        <h5><strong>Working with APIs in Python</strong></h5>
+        <p>Working with APIs (Application Programming Interfaces) in Python allows you to interact with external
+            services, retrieve data, and perform various tasks. Here's a general process for working with APIs:</p>
+
+        <ol>
+            <li><strong>Choose an API</strong>:
+                <p>Select an API that provides the data or functionality you need. Popular APIs include weather
+                    services, social media APIs, financial data APIs, and more.</p>
+            </li>
+            <li><strong>Read API Documentation</strong>:
+                <p>API documentation explains how to make requests, the available endpoints, required parameters,
+                    and
+                    response formats.</p>
+            </li>
+            <li><strong>Make API Requests</strong>:
+                <p>To retrieve data from an API, you need to make HTTP requests. You can use the
+                    <code>requests</code>
+                    library, which simplifies the process.
+                </p>
+                <pre><code>import requests
+
+response = requests.get("https://api.example.com/data")
+data = response.json()</code></pre>
+            </li>
+            <li><strong>Handle Responses</strong>:
+                <p>API responses typically come in JSON format. Parse the JSON data to access the information you
+                    need.
+                </p>
+            </li>
+            <li><strong>Authentication</strong>:
+                <p>Many APIs require authentication, which can be done using API keys, tokens, or other methods.
+                    Include
+                    authentication information in your requests.</p>
+            </li>
+            <li><strong>Error Handling</strong>:
+                <p>API calls can fail due to various reasons. Implement error handling to gracefully handle cases
+                    where
+                    the API response indicates an error.</p>
+            </li>
+            <li><strong>Rate Limiting</strong>:
+                <p>APIs often have rate limits to prevent abuse. Be mindful of these limits and follow the
+                    guidelines
+                    provided in the API documentation.</p>
+            </li>
+
+
+            <h6>Here's an example of Working with the <strong>OpenWeatherMap</strong> API to retrieve weather data:
+            </h6>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code [innerHTML]="open_weather_map"></code></pre>
+                </div>
+            </div>
+            <p>Remember to replace <code>"your_api_key"</code> with your actual API key. Working with APIs can be
+                incredibly
+                useful for integrating external data and services into your Python applications.</p>
+        </ol>
+    </section>
+    <section>
+        <h5><strong>Working with Databases in Python</strong></h5>
+        <p>Python provides several libraries to interact with databases. One of the most commonly used libraries for
+            database interaction is <code>sqlite3</code>, which allows you to work with SQLite databases. Here's an
+            overview of how to work with databases in Python:</p>
+
+        <ol>
+            <li><strong>Connecting to a Database</strong>:
+                <p>You can establish a connection to a database using the <code>sqlite3</code> library.</p>
+                <pre><code>import sqlite3
+
+# Connect to a database (or create one if it doesn't exist)
+conn = sqlite3.connect("mydatabase.db")</code></pre>
+            </li>
+            <li><strong>Creating a Table</strong>:
+                <p>Use SQL commands to create tables in the database.</p>
+                <pre><code># Create a table
+c = conn.cursor()
+c.execute('''CREATE TABLE IF NOT EXISTS users
+         (id INTEGER PRIMARY KEY, name TEXT, email TEXT)''')</code></pre>
+            </li>
+            <li><strong>Inserting Data</strong>:
+                <p>Insert data into the table using the <code>INSERT INTO</code> SQL command.</p>
+                <pre><code># Insert data
+c.execute("INSERT INTO users (name, email) VALUES (?, ?)", ("Alice", "alice@example.com"))</code></pre>
+            </li>
+            <li><strong>Fetching Data</strong>:
+                <p>Retrieve data from the database using the <code>SELECT</code> SQL command.</p>
+                <pre><code># Fetch data
+c.execute("SELECT * FROM users")
+rows = c.fetchall()
+for row in rows:
+print(row)</code></pre>
+            </li>
+            <li><strong>Updating and Deleting Data</strong>:
+                <p>Modify or delete data using <code>UPDATE</code> and <code>DELETE</code> SQL commands.</p>
+                <pre><code># Update data
+c.execute("UPDATE users SET email = ? WHERE id = ?", ("newemail@example.com", 1))
+
+# Delete data
+c.execute("DELETE FROM users WHERE id = ?", (1,))</code></pre>
+            </li>
+            <li><strong>Committing Changes and Closing Connection</strong>:
+                <p>After making changes, you need to commit them and close the connection.</p>
+                <pre><code>conn.commit()  # Commit changes
+conn.close()   # Close connection</code></pre>
+            </li>
+        </ol>
+
+        <p>Remember to handle exceptions and errors while working with databases. If you're working with databases
+            other
+            than SQLite, there are additional libraries like <code>MySQLdb</code>, <code>psycopg2</code> for
+            PostgreSQL,
+            and <code>sqlalchemy</code> that provide more advanced features and compatibility with other database
+            systems.</p>
+
+    </section>
+    <section>
+        <h5><strong>Unit Testing in Python</strong></h5>
+        <p>Unit testing is a software testing technique where individual units or components of a program are tested
+            in
+            isolation to ensure they work as expected. In Python, the built-in <code>unittest</code> framework
+            provides
+            a way to create and run unit tests. Here's a basic overview:</p>
+
+        <ol>
+            <li><strong>Import <code>unittest</code></strong>:
+                <p>First, import the <code>unittest</code> module.</p>
+                <pre><code>import unittest</code></pre>
+            </li>
+            <li><strong>Create Test Cases</strong>:
+                <p>Create a test case class by subclassing <code>unittest.TestCase</code>. Each test case is a
+                    method
+                    that starts with <code>"test_"</code> and contains assertions to verify expected outcomes.</p>
+                <div class="code-background">
+                    <section class="code-header">
+                        <div class="code-html">
+                            <span>python</span>
+                            <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                    code</button></span>
+                        </div>
+                    </section>
+                    <div class="code">
+                        <pre><code>class MyTestCase(unittest.TestCase):
+def test_addition(self):
+    self.assertEqual(2 + 2, 4)
+       
+def test_subtraction(self):
+    self.assertEqual(5 - 3, 2)</code></pre>
+                    </div>
+                </div>
+            </li>
+            <li><strong>Test Discovery</strong>:
+                <p>To run your tests, use the command-line test runner provided by Python's <code>-m unittest</code>
+                    module.</p>
+                <pre><code>python -m unittest test_module.py</code></pre>
+                <p>Replace <code>test_module.py</code> with the name of your test module.</p>
+            </li>
+            <li><strong>Assertions</strong>:
+                <p>The <code>unittest.TestCase</code> class provides various assertion methods to check conditions.
+                    Some
+                    common assertions are:</p>
+                <ul>
+                    <li><code>assertEqual(a, b)</code>: Check if <code>a</code> is equal to <code>b</code>.</li>
+                    <li><code>assertNotEqual(a, b)</code>: Check if <code>a</code> is not equal to <code>b</code>.
+                    </li>
+                    <li><code>assertTrue(expr)</code>: Check if <code>expr</code> is <code>True</code>.</li>
+                    <li><code>assertFalse(expr)</code>: Check if <code>expr</code> is <code>False</code>.</li>
+                </ul>
+            </li>
+            <li><strong>Setup and Teardown</strong>:
+                <p>You can define <code>setUp()</code> and <code>tearDown()</code> methods in your test class to
+                    prepare
+                    and clean up resources before and after each test.</p>
+                <div class="code-background">
+                    <section class="code-header">
+                        <div class="code-html">
+                            <span>python</span>
+                            <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                    code</button></span>
+                        </div>
+                    </section>
+                    <div class="code">
+                        <pre><code>class MyTestCase(unittest.TestCase):
+def setUp(self):
+    # Set up resources
+    pass
+   
+def tearDown(self):
+    # Clean up resources
+    pass</code></pre>
+                    </div>
+                </div>
+            </li>
+        </ol>
+
+        <p>Unit testing helps catch bugs early in the development process and provides a safety net when making
+            changes
+            to your code. It encourages modular and maintainable code by ensuring that individual components work
+            correctly in isolation.</p>
+
+    </section>
+    <section>
+        <h5><strong>Working with Virtual Environments in Python</strong></h5>
+        <p>A virtual environment is a self-contained directory that contains its own Python interpreter and a set of
+            libraries, allowing you to manage project-specific dependencies separately from the system-wide Python
+            installation. This is extremely useful to avoid conflicts between different projects with different
+            dependencies. Here's how you can work with virtual environments in Python:</p>
+
+        <ol>
+            <li><strong>Creating a Virtual Environment</strong>:
+                <p>To create a virtual environment, use the <code>venv</code> module (Python 3.3+).</p>
+                <pre><code>python -m venv myenv</code></pre>
+                <p>This creates a new directory called <code>myenv</code> that contains the virtual environment.</p>
+            </li>
+            <li><strong>Activating the Virtual Environment</strong>:
+                <p>On Windows:</p>
+                <pre><code>myenv\Scripts\activate</code></pre>
+                <p>On macOS and Linux:</p>
+                <pre><code>source myenv/bin/activate</code></pre>
+                <p>After activation, your shell prompt should show the virtual environment's name.</p>
+            </li>
+            <li><strong>Installing Packages</strong>:
+                <p>When the virtual environment is active, any packages you install using <code>pip</code> will be
+                    isolated within the virtual environment.</p>
+                <pre><code>pip install package_name</code></pre>
+            </li>
+            <li><strong>Deactivating the Virtual Environment</strong>:
+                <p>To deactivate the virtual environment and return to the global Python environment, simply run:
+                </p>
+                <pre><code>deactivate</code></pre>
+            </li>
+            <li><strong>Using Virtual Environments with IDEs</strong>:
+                <p>Many integrated development environments (IDEs) allow you to create and manage virtual
+                    environments
+                    directly from the interface. For example, in Visual Studio Code, you can select a Python
+                    interpreter
+                    associated with a specific virtual environment.</p>
+            </li>
+            <li><strong>Requirements Files</strong>:
+                <p>You can create a <code>requirements.txt</code> file containing a list of packages and their
+                    versions.
+                    This file can be used to recreate the environment on another system.</p>
+                <pre><code>pip freeze > requirements.txt</code></pre>
+                <p>To install packages from a requirements file:</p>
+                <pre><code>pip install -r requirements.txt</code></pre>
+            </li>
+        </ol>
+
+        <p>Virtual environments are a fundamental tool for Python development, especially when working on multiple
+            projects with different dependencies. They help maintain a clean and isolated development environment,
+            making it easier to manage dependencies and avoid conflicts.</p>
+
+    </section>
+    <section>
+        <h5><strong>Debugging and Profiling in Python</strong></h5>
+        <p>Debugging and profiling are essential techniques for identifying and fixing issues in your Python code,
+            as
+            well as optimizing its performance. Here's an overview of debugging and profiling techniques in Python:
+        </p>
+
+        <strong>Debugging:</strong>
+        <ol>
+            <li><strong>Print Statements</strong>:
+                <p>The simplest way to debug is by adding print statements to your code to display variable values
+                    and
+                    control flow.</p>
+            </li>
+            <li><strong>Using a Debugger</strong>:
+                <p>Python comes with a built-in debugger called <code>pdb</code>. You can insert breakpoints in your
+                    code and interactively step through it to inspect variables and identify issues.</p>
+                <div class="code-background">
+                    <section class="code-header">
+                        <div class="code-html">
+                            <span>python</span>
+                            <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                    code</button></span>
+                        </div>
+                    </section>
+                    <div class="code">
+                        <pre><code>import pdb
+
+def my_function():
+x = 10
+y = 5
+pdb.set_trace()  # Breakpoint
+result = x + y
+print(result)
+</code></pre>
+                    </div>
+                </div>
+            </li>
+            <li><strong>Visual Debuggers</strong>:
+                <p>Integrated Development Environments (IDEs) like Visual Studio Code, PyCharm, and Eclipse offer
+                    visual
+                    debuggers with user-friendly interfaces for setting breakpoints, inspecting variables, and more.
+                </p>
+            </li>
+        </ol>
+
+        <strong>Profiling:</strong>
+        <ol>
+            <li><strong>Time Profiling</strong>:
+                <p>The <code>cProfile</code> module allows you to profile your code's execution time. It helps
+                    identify
+                    bottlenecks and areas where optimizations are needed.</p>
+                <pre><code>import cProfile
+
+def my_function():
+# Your code here
+
+cProfile.run('my_function()')
+</code></pre>
+            </li>
+            <li><strong>Memory Profiling</strong>:
+                <p>The <code>memory_profiler</code> module helps you profile memory usage. It identifies
+                    memory-intensive parts of your code and helps you optimize memory consumption.</p>
+                <div class="code-background">
+                    <section class="code-header">
+                        <div class="code-html">
+                            <span>python</span>
+                            <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                    code</button></span>
+                        </div>
+                    </section>
+                    <div class="code">
+                        <pre><code>pip install memory-profiler</code></pre>
+                        <pre><code>from memory_profiler import profile
+
+@profile
+def my_function():
+# Your code here
+</code></pre>
+                    </div>
+                </div>
+            </li>
+            <li><strong>Profiling with <code>timeit</code></strong>:
+                <p>The <code>timeit</code> module allows you to measure the execution time of small code snippets.
+                </p>
+                <div class="code-background">
+                    <section class="code-header">
+                        <div class="code-html">
+                            <span>python</span>
+                            <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                    code</button></span>
+                        </div>
+                    </section>
+                    <div class="code">
+                        <pre><code>import timeit
+
+def my_function():
+# Your code here
+
+time_taken = timeit.timeit(my_function, number=1000)
+print("Time taken:", time_taken)
+</code></pre>
+                    </div>
+                </div>
+            </li>
+            <li><strong>Using Profiling Tools</strong>:
+                <p>Profiling tools like <code>line_profiler</code> and <code>py-spy</code> offer more advanced
+                    profiling
+                    capabilities, such as line-by-line execution time analysis and real-time visualization.</p>
+                <pre><code>pip install line-profiler</code></pre>
+                <pre><code>pip install py-spy</code></pre>
+            </li>
+        </ol>
+
+        <p>Both debugging and profiling are crucial for identifying and resolving issues in your code and ensuring
+            that
+            your applications are performing optimally.</p>
+
+    </section>
+    <section>
+        <h5><strong>Web Development in Python</strong></h5>
+        <p>Web development in Python involves creating web applications, websites, and web services using various
+            frameworks, tools, and libraries. Here's an overview of web development aspects in Python:</p>
+        <ol>
+            <li>Web Frameworks</li>
+            <p>Web frameworks provide a structured way to build web applications. Some popular Python web frameworks
+                include:</p>
+            <ul>
+                <li><strong>Django</strong>: A full-stack framework that emphasizes rapid development, security, and
+                    scalability.</li>
+                <li><strong>Flask</strong>: A lightweight micro-framework that offers flexibility and is suitable
+                    for
+                    smaller projects.</li>
+                <li><strong>FastAPI</strong>: A modern, high-performance framework for building APIs with automatic
+                    OpenAPI
+                    documentation.</li>
+            </ul>
+
+            <li><strong>Front-End Development</strong></li>
+            <p>While Python is mainly used for back-end development, you can use it to generate HTML templates and
+                integrate
+                with front-end technologies such as HTML, CSS, and JavaScript. Frameworks like Django provide
+                template
+                engines for generating dynamic content.</p>
+
+            <li><strong>Database Integration</strong></li>
+            <p>Python web frameworks offer integration with various databases, such as SQLite, PostgreSQL, MySQL,
+                and
+                more.
+                Object-Relational Mapping (ORM) libraries like Django's ORM allow you to interact with databases
+                using
+                Python classes.</p>
+
+            <li><strong>Authentication and Security</strong></li>
+            <p>Web frameworks provide mechanisms for user authentication and authorization. Security measures, such
+                as
+                data
+                validation, password hashing, and protection against common attacks, are also important
+                considerations.
+            </p>
+
+            <li><strong>RESTful APIs and Web Services</strong></li>
+            <p>Python is often used to build APIs and web services using frameworks like Flask or FastAPI. These
+                APIs
+                allow
+                applications to communicate and exchange data over the web.</p>
+
+            <li><strong>Deployment and Hosting</strong></li>
+            <p>Deploying a Python web application involves configuring a web server (e.g., Apache, Nginx) and
+                deploying
+                the
+                application using technologies like WSGI (Web Server Gateway Interface) or ASGI (Asynchronous Server
+                Gateway
+                Interface). Platforms like Heroku, AWS, and DigitalOcean offer hosting solutions.</p>
+
+            <li><strong>Real-Time Web Applications</strong></li>
+            <p>For real-time applications, you can use libraries like <code>WebSocket</code> for asynchronous
+                communication
+                between the client and server.</p>
+
+            <li><strong>Content Management Systems (CMS)</strong></li>
+            <p>Django offers a powerful CMS called Wagtail that allows you to build and manage content-driven
+                websites.
+            </p>
+
+            <li><strong>Testing and Debugging</strong></li>
+            <p>Testing frameworks like <code>pytest</code> and <code>unittest</code> help ensure your web
+                application
+                functions as expected. Debugging techniques and tools discussed earlier are also applicable to web
+                development.</p>
+
+            <p>Python's versatility and a wide range of libraries make it suitable for various aspects of web
+                development.
+                Choosing the right framework and tools depends on your project's requirements, complexity, and your
+                familiarity with the technology stack.</p>
+        </ol>
+    </section>
+    <section>
+        <h5><strong>GUI Programming in Python</strong></h5>
+        <p>Graphical User Interface (GUI) programming in Python allows you to create desktop applications with
+            graphical
+            components and user-friendly interfaces. Here are some common libraries and frameworks you can use for
+            GUI
+            programming in Python:</p>
+        <ol>
+            <li><strong>Tkinter</strong></li>
+            <p>Tkinter is the standard GUI library that comes with Python. It's easy to use and suitable for
+                creating
+                simple
+                GUI applications.</p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code>
+import tkinter as tk
+
+root = tk.Tk()
+label = tk.Label(root, text="Hello, Tkinter!")
+label.pack()
+root.mainloop()
+</code></pre>
+                </div>
+            </div>
+
+            <li><strong>PyQt and PySide</strong></li>
+            <p>PyQt and PySide are powerful libraries for building cross-platform GUI applications. They provide a
+                wide
+                range of widgets and features.</p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code>
+from PyQt5 import QtWidgets
+
+app = QtWidgets.QApplication([])
+window = QtWidgets.QWidget()
+label = QtWidgets.QLabel("Hello, PyQt!")
+layout = QtWidgets.QVBoxLayout()
+layout.addWidget(label)
+window.setLayout(layout)
+window.show()
+app.exec_()
+</code></pre>
+                </div>
+            </div>
+
+            <li><strong>wxPython</strong></li>
+            <p>wxPython is another cross-platform GUI library that offers native-looking interfaces on different
+                platforms.
+            </p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code>
+import wx
+
+app = wx.App(False)
+frame = wx.Frame(None, wx.ID_ANY, "Hello, wxPython!")
+frame.Show(True)
+app.MainLoop()
+</code></pre>
+                </div>
+            </div>
+
+            <li><strong>Kivy</strong></li>
+            <p>Kivy is a framework for creating multi-touch applications. It's suitable for building applications
+                for
+                touch
+                devices and has a modern and intuitive API.</p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code>
+from kivy.app import App
+from kivy.uix.label import Label
+
+class MyApp(App):
+def build(self):
+    return Label(text="Hello, Kivy!")
+
+MyApp().run()
+</code></pre>
+                </div>
+            </div>
+
+            <li><strong>GTK+</strong></li>
+            <p>The PyGObject library allows you to create GUI applications using GTK+ (GIMP Toolkit).</p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code>
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+
+class MyWindow(Gtk.Window):
+def __init__(self):
+    Gtk.Window.__init__(self, title="Hello, GTK+")
+    label = Gtk.Label(label="Hello, GTK!")
+    self.add(label)
+
+win = MyWindow()
+win.connect("destroy", Gtk.main_quit)
+win.show_all()
+Gtk.main()
+</code></pre>
+                </div>
+            </div>
+
+            <p>Each of these libraries and frameworks has its own strengths and learning curve. Choose the one that
+                best
+                suits your needs and project requirements for creating user-friendly GUI applications.</p>
+        </ol>
+    </section>
+    <section>
+        <h5><strong>Concurrency and Threading in Python</strong></h5>
+        <p>Concurrency and threading in Python involve executing multiple tasks concurrently to improve efficiency
+            and
+            responsiveness. However, it's important to note that Python's Global Interpreter Lock (GIL) can limit
+            true
+            parallelism, particularly in CPU-bound tasks. Here's an overview of concurrency and threading concepts
+            in
+            Python:</p>
+        <ol>
+            <li><strong>Concurrency vs. Parallelism</strong></li>
+            <ul>
+                <li><strong>Concurrency:</strong> Executing multiple tasks in overlapping time periods, allowing
+                    progress on
+                    multiple tasks without completing any single task.</li>
+                <li><strong>Parallelism:</strong> Executing multiple tasks simultaneously on separate processors or
+                    cores.</li>
+            </ul>
+
+            <li><strong>Threading</strong></li>
+            <p>Threading is a way to achieve concurrency in Python by using threads. Threads are lighter-weight than
+                processes and share the same memory space.</p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code [innerHTML]="threading"></code></pre>
+                </div>
+            </div>
+
+            <li><strong>Thread Safety</strong></li>
+            <p>When using threads, ensure proper synchronization to avoid issues like data corruption or race
+                conditions.
+                Python's <code>threading</code> module provides synchronization primitives like locks and
+                semaphores.
+            </p>
+
+            <li><strong>Concurrency with <code>asyncio</code></strong></li>
+            <p><code>asyncio</code> is a library for asynchronous programming that uses coroutines and event loops.
+                It's
+                particularly suited for I/O-bound tasks and network operations.</p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code [innerHTML]="asyncio"></code></pre>
+                </div>
+            </div>
+
+            <li><strong>Multiprocessing</strong></li>
+            <p>For CPU-bound tasks, you can use the <code>multiprocessing</code> module to create multiple processes
+                that
+                run in parallel.</p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code [innerHTML]="multiprocessing"></code></pre>
+                </div>
+            </div>
+            <p>When working with concurrency and threading in Python, keep in mind the GIL's impact on CPU-bound
+                tasks.
+                For
+                I/O-bound tasks, using asynchronous programming with <code>asyncio</code> can be more efficient. For
+                CPU-bound tasks, consider using <code>multiprocessing</code> to take advantage of multiple cores.
+            </p>
+        </ol>
+    </section>
+    <section>
+        <h5><strong>Networking in Python</strong></h5>
+        <p>Networking in Python involves communication between computers over a network, whether it's for creating
+            client-server applications, web scraping, or working with APIs. Here's an overview of networking
+            concepts
+            and how to work with networking in Python:</p>
+        <ol>
+            <li><strong>Socket Programming</strong></li>
+            <p>Sockets provide a low-level interface for network communication. The <code>socket</code> module in
+                Python
+                allows you to create sockets for various types of communication (TCP, UDP).</p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code>
+import socket
+
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server_socket.bind(("127.0.0.1", 12345))
+server_socket.listen(5)
+
+client_socket, client_address = server_socket.accept()
+data = client_socket.recv(1024)
+client_socket.send(b"Hello from the server")
+
+client_socket.close()
+server_socket.close()
+</code></pre>
+                </div>
+            </div>
+
+            <li><strong>HTTP Requests with <code>requests</code></strong></li>
+            <p>The <code>requests</code> library simplifies making HTTP requests to web servers and APIs.</p>
+            <pre><code>
+import requests
+
+response = requests.get("https://api.example.com/data")
+data = response.json()
+</code></pre>
+
+            <li><strong>Web Scraping with <code>BeautifulSoup</code></strong></li>
+            <p><code>BeautifulSoup</code> is used for parsing HTML and XML documents, making it useful for web
+                scraping.
+            </p>
+            <pre><code>
+from bs4 import BeautifulSoup
+import requests
+
+response = requests.get("https://example.com")
+soup = BeautifulSoup(response.content, 'html.parser')
+</code></pre>
+
+            <li><strong>Socket Servers and Clients</strong></li>
+            <p>You can create simple socket servers and clients for communication between computers.</p>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code>
+# Server
+import socket
+
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server_socket.bind(("127.0.0.1", 12345))
+server_socket.listen(5)
+
+client_socket, client_address = server_socket.accept()
+data = client_socket.recv(1024)
+client_socket.send(b"Hello from the server")
+client_socket.close()
+server_socket.close()
+
+# Client
+import socket
+
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client_socket.connect(("127.0.0.1", 12345))
+client_socket.send(b"Hello from the client")
+response = client_socket.recv(1024)
+client_socket.close()
+</code></pre>
+                </div>
+            </div>
+
+            <li><strong>Working with APIs</strong></li>
+            <p>Python's <code>requests</code> library and API-specific libraries (e.g., <code>tweepy</code> for
+                Twitter)
+                help you interact with various APIs.</p>
+
+            <li><strong>Networking Libraries</strong></li>
+            <p>There are other networking libraries such as <code>socketserver</code> and <code>asyncio</code> for
+                building
+                network servers and clients, as well as <code>paramiko</code> for SSH communication.</p>
+
+            <p>Remember to handle exceptions, validate input, and consider security practices when working with
+                networking
+                in Python.</p>
+        </ol>
+    </section>
+    <section>
+        <h5><strong>Data Science in Python</strong></h5>
+        <p>Data science and analysis in Python involve using various libraries and tools to manipulate, analyze, and
+            visualize data. Here's an overview of the key components and steps involved in data science using
+            Python:
+        </p>
+        <ol>
+            <li><strong>Data Collection and Preparation</strong></li>
+            <ul>
+                <li><strong>Collect data from various sources such as databases, APIs, web scraping, CSV files,
+                        etc.</strong></li>
+                <li><strong>Clean and preprocess the data by handling missing values, outliers, and formatting
+                        issues.</strong></li>
+            </ul>
+
+            <li><strong>Data Manipulation and Analysis Libraries</strong></li>
+            <ul>
+                <li><strong>NumPy</strong>: Provides support for multi-dimensional arrays and mathematical
+                    functions.
+                </li>
+                <li><strong>Pandas</strong>: Offers data structures (DataFrames and Series) and tools for data
+                    manipulation
+                    and analysis.</li>
+            </ul>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code [innerHTML]="data_analysis"></code></pre>
+                </div>
+            </div>
+
+            <li><strong>Data Visualization</strong></li>
+            <ul>
+                <li><strong>Matplotlib</strong>: A versatile library for creating static, interactive, and animated
+                    visualizations.</li>
+                <li><strong>Seaborn</strong>: Built on top of Matplotlib, Seaborn provides higher-level interfaces
+                    for
+                    statistical visualization.</li>
+            </ul>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code>
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+data = sns.load_dataset('iris')
+sns.pairplot(data, hue='species')
+plt.show()
+</code></pre>
+                </div>
+            </div>
+
+            <li><strong>Data Analysis and Statistics</strong></li>
+            <ul>
+                <li><strong>SciPy</strong>: A library for scientific and technical computing, including functions
+                    for
+                    optimization, integration, interpolation, and more.</li>
+                <li><strong>Statsmodels</strong>: Provides tools for estimating and interpreting statistical models.
+                </li>
+            </ul>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code>
+import scipy.stats as stats
+
+data = [10, 12, 15, 18, 20]
+mean = np.mean(data)
+std_dev = np.std(data)
+t_stat, p_value = stats.ttest_1samp(data, popmean=15)
+</code></pre>
+                </div>
+            </div>
+
+            <li><strong>Machine Learning</strong></li>
+            <ul>
+                <li><strong>Scikit-learn</strong>: A comprehensive library for machine learning tasks such as
+                    classification, regression, clustering, and more.</li>
+                <li><strong>TensorFlow</strong> and <strong>PyTorch</strong>: Deep learning frameworks for building
+                    and
+                    training neural networks.</li>
+            </ul>
+            <div class="code-background">
+                <section class="code-header">
+                    <div class="code-html">
+                        <span>python</span>
+                        <span class="copy-code-span"><button class="bi bi-clipboard button-copy">Copy
+                                code</button></span>
+                    </div>
+                </section>
+                <div class="code">
+                    <pre><code>
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+model = LinearRegression()
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
+mse = mean_squared_error(y_test, y_pred)
+</code></pre>
+                </div>
+            </div>
+
+            <li>Data Analysis Workflow</li>
+            <p>Combine the above components in a structured workflow to clean, analyze, visualize, and model data
+                for
+                insights and decision-making.</p>
+
+            <p>Python's ecosystem of libraries and tools makes it a popular choice for data science and analysis. It
+                offers
+                a versatile environment for handling every step of the data science process, from data acquisition
+                to
+                model
+                deployment.</p>
+        </ol>
+    </section>
+    <section>
+        <h5><strong>Machine Learning and AI in Python</strong></h5>
+        <p>Machine learning and artificial intelligence (AI) are rapidly growing fields that involve using
+            algorithms
+            and models to enable computers to learn from data and perform tasks that typically require human
+            intelligence. Python is a widely used programming language for machine learning and AI due to its rich
+            ecosystem of libraries and tools. Here's an overview:</p>
+        <ol>
+            <li><strong>Libraries for Machine Learning</strong></li>
+            <ul>
+                <li><strong>Scikit-learn</strong>: A versatile library for various machine learning algorithms such
+                    as
+                    classification, regression, clustering, and more.</li>
+                <li><strong>TensorFlow</strong> and <strong>PyTorch</strong>: Deep learning frameworks for building
+                    and
+                    training neural networks.</li>
+                <li><strong>Keras</strong>: A high-level neural networks API that runs on top of TensorFlow,
+                    designed
+                    for
+                    quick experimentation.</li>
+                <li><strong>XGBoost</strong> and <strong>LightGBM</strong>: Libraries for gradient boosting, a
+                    powerful
+                    ensemble technique.</li>
+            </ul>
+
+            <li><strong>Supervised Learning</strong></li>
+            <ul>
+                <li><strong>Classification</strong>: Predicting a label/category for a given input (e.g., image
+                    recognition).</li>
+                <li><strong>Regression</strong>: Predicting a continuous value (e.g., predicting house prices).</li>
+            </ul>
+
+            <li><strong>Unsupervised Learning</strong></li>
+            <ul>
+                <li><strong>Clustering</strong>: Grouping similar data points into clusters (e.g., customer
+                    segmentation).
+                </li>
+                <li><strong>Dimensionality Reduction</strong>: Reducing the number of features while retaining
+                    important
+                    information.</li>
+            </ul>
+
+            <li><strong>Deep Learning</strong></li>
+            <p>Deep learning involves neural networks with many layers (deep networks). It's used for tasks like
+                image
+                recognition, natural language processing, and more.</p>
+
+            <li><strong>Natural Language Processing (NLP)</strong></li>
+            <p>Analyzing and understanding human language using machine learning techniques. Libraries like NLTK and
+                spaCy
+                are popular for NLP tasks.</p>
+
+            <li><strong>Reinforcement Learning</strong></li>
+            <p>Teaching machines to learn through interaction with an environment. Libraries like OpenAI Gym provide
+                environments for reinforcement learning experiments.</p>
+
+            <li><strong>AI and Machine Learning Workflow</strong></li>
+            <p>The typical workflow includes data preprocessing, feature engineering, model selection and training,
+                hyperparameter tuning, evaluation, and deployment.</p>
+
+            <li><strong>Model Evaluation</strong></li>
+            <p>Metrics like accuracy, precision, recall, F1-score, and AUC-ROC are used to assess model performance.
+                Cross-validation helps estimate generalization performance.</p>
+
+            <li><strong>Model Deployment</strong></li>
+            <p>After training, models need to be deployed in production environments. Tools like Flask, Django, and
+                cloud
+                platforms (AWS, Azure, Google Cloud) can be used.</p>
+
+            <li><strong>AI Applications</strong></li>
+            <p>AI has applications in image and speech recognition, autonomous vehicles, recommendation systems,
+                virtual
+                assistants, and more.</p>
+
+            <p>Python's vibrant ecosystem and community make it an ideal choice for implementing machine learning
+                and AI
+                algorithms. The libraries and tools available make complex tasks accessible to a wide range of
+                developers
+                and researchers.</p>
+        </ol>
+    </section>
+    <section>
+        <h5><strong>Web Scraping with Python</strong></h5>
+        <p>Web scraping involves extracting information from websites by sending HTTP requests, fetching the HTML
+            content, and parsing it to extract desired data. Python offers several libraries that make web scraping
+            easier. Here's an overview of the process using the <code>requests</code> and <code>BeautifulSoup</code>
+            libraries:</p>
+        <ol>
+            <li><strong>Install Required Libraries</strong></li>
+            <p>Install the <code>requests</code> and <code>beautifulsoup4</code> libraries using <code>pip</code>:
+            </p>
+            <pre><code>pip install requests beautifulsoup4</code></pre>
+
+            <li><strong>Sending HTTP Requests</strong></li>
+            <p>Use the <code>requests</code> library to send an HTTP GET request to the website you want to scrape:
+            </p>
+            <pre><code>import requests
+
+url = "https://example.com"
+response = requests.get(url)
+html_content = response.text</code></pre>
+
+            <li><strong>Parsing HTML with BeautifulSoup</strong></li>
+            <p>Use the <code>BeautifulSoup</code> library to parse the HTML content and navigate through the
+                document
+                structure:</p>
+            <pre><code>from bs4 import BeautifulSoup
+
+soup = BeautifulSoup(html_content, 'html.parser')</code></pre>
+
+            <li><strong>Extracting Data</strong></li>
+            <p>Use BeautifulSoup's methods to locate and extract the desired data from the parsed HTML:</p>
+            <pre><code># Example: Extracting all links from the page
+links = soup.find_all('a')
+for link in links:
+print(link.get('href'))</code></pre>
+
+            <li><strong>Navigating the HTML Tree</strong></li>
+            <p>Use tags, classes, IDs, and other attributes to navigate through the HTML tree and locate specific
+                elements:
+            </p>
+            <pre><code># Example: Extracting text from specific elements
+title = soup.find('h1').text
+paragraph = soup.find('p', class_='intro').text</code></pre>
+
+            <li><strong>Handling Dynamic Content</strong></li>
+            <p>If a website uses JavaScript to load content dynamically, consider using tools like
+                <code>Selenium</code>
+                with a web driver to simulate browser behavior.
+            </p>
+
+            <p>Remember to respect website terms of use, robots.txt guidelines, and be considerate of server load.
+                Web
+                scraping can vary in complexity based on the structure of the target website and the data you're
+                trying
+                to
+                extract. Always check the website's terms of service and legal restrictions before scraping.</p>
+
         </ol>
     </section>
 
