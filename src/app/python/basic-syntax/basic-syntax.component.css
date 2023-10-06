@@ -19,3 +19,19 @@ pre {
     margin: 10px 20px 10px 20px; 
     padding-bottom: 5px;
 }
+
+.comment{
+    color:grey;
+  }
+  .string{
+    color:#00a67d;
+  }
+  .number{
+    color:#df3079;
+  }
+  .built-in{
+    color:#e9950c;
+  }
+  .litrals{
+    color:#2e95d3;
+  }
