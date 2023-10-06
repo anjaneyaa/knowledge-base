@@ -6,7 +6,7 @@
             <li><strong>Conditional Statements (if, elif, else)</strong></li>
             Used to execute different code blocks based on conditions.
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="conditional_statement"></app-code-template>
                 <div class="code">
                     <pre><code [innerHTML]="conditional_statement"></code></pre>
                 </div>
@@ -43,7 +43,7 @@
 
                 <p>Here's an example demonstrating these control structures:</p>
                 <div class="code-background">
-                    <app-code-template></app-code-template>
+                    <app-code-template [formInputText]="control_statement"></app-code-template>
                     <div class="code">
                         <pre><code [innerHTML]="control_statement"></code></pre>
                     </div>
@@ -247,7 +247,7 @@ contains_python = "Python" in my_string</code></pre>
                 name
                 and the mode in which you want to open the file (read, write, or both).</p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                 <div class="code">
                     <pre><code># Opening a file for reading
 file = open("example.txt", "r")
@@ -263,7 +263,7 @@ file = open("output.txt", "w")</code></pre>
                 <code>readlines()</code>.
             </p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                 <div class="code">
                     <pre><code># Reading the entire content
 content = file.read()
@@ -317,7 +317,7 @@ file.write("Additional content")</code></pre>
                 the
                 code in the corresponding <code>except</code> block will be executed.</p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                 <div class="code">
                     <pre><code>try:
 # Code that might raise an exception
@@ -331,7 +331,7 @@ print("Division by zero error")</code></pre>
             <li><strong>Multiple Except Blocks</strong></li>
             <p>You can handle different types of exceptions with multiple <code>except</code> blocks.</p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                 <div class="code">
                     <pre><code>try:
 value = int("abc")
@@ -345,7 +345,7 @@ print("ZeroDivisionError occurred")</code></pre>
             <li><strong>Exception with an Else Block</strong></li>
             <p>You can use an <code>else</code> block to execute code when no exception occurs.</p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                 <div class="code">
                     <pre><code>try:
 x = 10 / 2
@@ -362,7 +362,7 @@ print("Result:", x)</code></pre>
                 to
                 release resources.</p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                 <div class="code">
                     <pre><code>try:
 file = open("example.txt", "r")
@@ -409,7 +409,7 @@ def __init__(self, message):
                 and
                 methods (functions) that the objects will have.</p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="class_Person"></app-code-template>
                 <div class="code">
                     <pre><code [innerHTML]="class_Person"></code></pre>
                 </div>
@@ -451,7 +451,7 @@ def __init__(self, name, age, student_id):
                 enables
                 method overriding and dynamic method binding.</p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                 <div class="code">
                     <pre><code>class Shape:
 def area(self):
@@ -600,7 +600,7 @@ print("Pattern found:", match.group())</code></pre>
             <li><strong>Groups and Capturing</strong></li>
             <p>Use parentheses to create capturing groups.</p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="pattern"></app-code-template>
                 <div class="code">
                     <pre><code [innerHTML]="pattern"></code></pre>
                 </div>
@@ -866,7 +866,7 @@ data = response.json()</code></pre>
             <h6>Here's an example of Working with the <strong>OpenWeatherMap</strong> API to retrieve weather data:
             </h6>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="open_weather_map"></app-code-template>
                 <div class="code">
                     <pre><code [innerHTML]="open_weather_map"></code></pre>
                 </div>
@@ -951,7 +951,7 @@ conn.close()   # Close connection</code></pre>
                     method
                     that starts with <code>"test_"</code> and contains assertions to verify expected outcomes.</p>
                 <div class="code-background">
-                    <app-code-template></app-code-template>
+                    <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                     <div class="code">
                         <pre><code>class MyTestCase(unittest.TestCase):
 def test_addition(self):
@@ -985,7 +985,7 @@ def test_subtraction(self):
                     prepare
                     and clean up resources before and after each test.</p>
                 <div class="code-background">
-                    <app-code-template></app-code-template>
+                    <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                     <div class="code">
                         <pre><code>class MyTestCase(unittest.TestCase):
 def setUp(self):
@@ -1076,7 +1076,7 @@ def tearDown(self):
                 <p>Python comes with a built-in debugger called <code>pdb</code>. You can insert breakpoints in your
                     code and interactively step through it to inspect variables and identify issues.</p>
                 <div class="code-background">
-                    <app-code-template></app-code-template>
+                    <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                     <div class="code">
                         <pre><code>import pdb
 
@@ -1116,7 +1116,7 @@ cProfile.run('my_function()')
                 <p>The <code>memory_profiler</code> module helps you profile memory usage. It identifies
                     memory-intensive parts of your code and helps you optimize memory consumption.</p>
                 <div class="code-background">
-                    <app-code-template></app-code-template>
+                    <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                     <div class="code">
                         <pre><code>pip install memory-profiler</code></pre>
                         <pre><code>from memory_profiler import profile
@@ -1132,7 +1132,7 @@ def my_function():
                 <p>The <code>timeit</code> module allows you to measure the execution time of small code snippets.
                 </p>
                 <div class="code-background">
-                    <app-code-template></app-code-template>
+                    <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                     <div class="code">
                         <pre><code>import timeit
 
@@ -1251,7 +1251,7 @@ print("Time taken:", time_taken)
                 simple
                 GUI applications.</p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                 <div class="code">
                     <pre><code>
 import tkinter as tk
@@ -1269,7 +1269,7 @@ root.mainloop()
                 wide
                 range of widgets and features.</p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                 <div class="code">
                     <pre><code>
 from PyQt5 import QtWidgets
@@ -1291,7 +1291,7 @@ app.exec_()
                 platforms.
             </p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                 <div class="code">
                     <pre><code>
 import wx
@@ -1310,7 +1310,7 @@ app.MainLoop()
                 touch
                 devices and has a modern and intuitive API.</p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                 <div class="code">
                     <pre><code>
 from kivy.app import App
@@ -1328,7 +1328,7 @@ MyApp().run()
             <li><strong>GTK+</strong></li>
             <p>The PyGObject library allows you to create GUI applications using GTK+ (GIMP Toolkit).</p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                 <div class="code">
                     <pre><code>
 import gi
@@ -1377,7 +1377,7 @@ Gtk.main()
             <p>Threading is a way to achieve concurrency in Python by using threads. Threads are lighter-weight than
                 processes and share the same memory space.</p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="threading"></app-code-template>
                 <div class="code">
                     <pre><code [innerHTML]="threading"></code></pre>
                 </div>
@@ -1395,7 +1395,7 @@ Gtk.main()
                 It's
                 particularly suited for I/O-bound tasks and network operations.</p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="asyncio"></app-code-template>
                 <div class="code">
                     <pre><code [innerHTML]="asyncio"></code></pre>
                 </div>
@@ -1406,7 +1406,7 @@ Gtk.main()
                 that
                 run in parallel.</p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="multiprocessing"></app-code-template>
                 <div class="code">
                     <pre><code [innerHTML]="multiprocessing"></code></pre>
                 </div>
@@ -1431,7 +1431,7 @@ Gtk.main()
                 Python
                 allows you to create sockets for various types of communication (TCP, UDP).</p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                 <div class="code">
                     <pre><code>
 import socket
@@ -1474,7 +1474,7 @@ soup = BeautifulSoup(response.content, 'html.parser')
             <li><strong>Socket Servers and Clients</strong></li>
             <p>You can create simple socket servers and clients for communication between computers.</p>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                 <div class="code">
                     <pre><code>
 # Server
@@ -1542,7 +1542,7 @@ client_socket.close()
                     and analysis.</li>
             </ul>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="data_analysis"></app-code-template>
                 <div class="code">
                     <pre><code [innerHTML]="data_analysis"></code></pre>
                 </div>
@@ -1557,7 +1557,7 @@ client_socket.close()
                     statistical visualization.</li>
             </ul>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                 <div class="code">
                     <pre><code>
 import matplotlib.pyplot as plt
@@ -1579,7 +1579,7 @@ plt.show()
                 </li>
             </ul>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                 <div class="code">
                     <pre><code>
 import scipy.stats as stats
@@ -1601,7 +1601,7 @@ t_stat, p_value = stats.ttest_1samp(data, popmean=15)
                     training neural networks.</li>
             </ul>
             <div class="code-background">
-                <app-code-template></app-code-template>
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
                 <div class="code">
                     <pre><code>
 from sklearn.model_selection import train_test_split

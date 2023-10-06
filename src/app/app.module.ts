@@ -9,7 +9,7 @@ import { AdvancePythonComponent } from './advance-python/advance-python.componen
 import { PythonTopicsComponent } from './python/python-topics/python-topics.component';
 import { CodeTemplateComponent } from './code-template/code-template.component';
 import { ReserveComponent } from './reserve/reserve.component';
-import { CopyClipboardDirective } from './copy-clipboard.directive';
+import { BasicSyntaxComponent } from './python/basic-syntax/basic-syntax.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { CopyClipboardDirective } from './copy-clipboard.directive';
     PythonTopicsComponent,
     CodeTemplateComponent,
     ReserveComponent,
-    CopyClipboardDirective
+    BasicSyntaxComponent
   ],
   imports: [
     BrowserModule,

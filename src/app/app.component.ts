@@ -8,7 +8,4 @@ import { ClipboardService } from 'ngx-clipboard';
 })
 export class AppComponent {
   title = 'knowledge-base';
-  content = 'Hello, i am tiny text and copied from somewhere else :)';
- 
-
 }
