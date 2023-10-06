@@ -1,11 +1,16 @@
-body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
 h2{
     text-align: center;
 }
+pre {
+    margin: 0.5rem;
+}
 .code-background{
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 6px;
+    overflow: hidden;
     background-color: black; 
     color: white;
 }
@@ -46,4 +51,20 @@ h2{
     color: white;
     padding: 0 1rem 1rem;
     margin: 0;
+  }
+
+  .comment{
+    color:grey;
+  }
+  .string{
+    color:#00a67d;
+  }
+  .number{
+    color:#df3079;
+  }
+  .built-in{
+    color:#e9950c;
+  }
+  .litrals{
+    color:#2e95d3;
   }

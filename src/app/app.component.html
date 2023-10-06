@@ -173,6 +173,8 @@
 </div>
 
 <app-python></app-python>
-
+<input type="text" #formInputText />
+ 
+<button [ngxClipboard]="formInputText">Copy Data</button>
 
 <router-outlet></router-outlet>

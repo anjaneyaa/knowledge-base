@@ -1,9 +1,11 @@
 .code-header{
     background-color: rgb(49, 48, 48); 
     height: 30px;
+
 }
 .code-html{
-    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .copy-code-span{
     float: right;
