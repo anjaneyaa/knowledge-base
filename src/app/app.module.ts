@@ -34,6 +34,18 @@ import { NetworkingComponent } from './python/networking/networking.component';
 import { DataScienceAndAnalysisComponent } from './python/data-science-and-analysis/data-science-and-analysis.component';
 import { MachineKnowledgeBaseAndAiComponent } from './python/machine-knowledge-base-and-ai/machine-knowledge-base-and-ai.component';
 import { WebScrapingComponent } from './python/web-scraping/web-scraping.component';
+import { DecoratorsComponent } from './advance-python/decorators/decorators.component';
+import { GeneratorsComponent } from './advance-python/generators/generators.component';
+import { IteratorsAndIterablesComponent } from './advance-python/iterators-and-iterables/iterators-and-iterables.component';
+import { ContextManagersComponent } from './advance-python/context-managers/context-managers.component';
+import { MetaclassesComponent } from './advance-python/metaclasses/metaclasses.component';
+import { ConcurrencyAndMultithreadingComponent } from './advance-python/concurrency-and-multithreading/concurrency-and-multithreading.component';
+import { CoroutinesAndAsynchronousProgrammingComponent } from './advance-python/coroutines-and-asynchronous-programming/coroutines-and-asynchronous-programming.component';
+import { MemoryManagementComponent } from './advance-python/memory-management/memory-management.component';
+import { PerformanceOptimizationComponent } from './advance-python/performance-optimization/performance-optimization.component';
+import { DynamicTypingAndTypeAnnotationsComponent } from './advance-python/dynamic-typing-and-type-annotations/dynamic-typing-and-type-annotations.component';
+import { UnicodeAndInternationalizationComponent } from './advance-python/unicode-and-internationalization/unicode-and-internationalization.component';
+import { CExtensionsAndCythonComponent } from './advance-python/c-extensions-and-cython/c-extensions-and-cython.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +79,19 @@ import { WebScrapingComponent } from './python/web-scraping/web-scraping.compone
     NetworkingComponent,
     DataScienceAndAnalysisComponent,
     MachineKnowledgeBaseAndAiComponent,
-    WebScrapingComponent
+    WebScrapingComponent,
+    DecoratorsComponent,
+    GeneratorsComponent,
+    IteratorsAndIterablesComponent,
+    ContextManagersComponent,
+    MetaclassesComponent,
+    ConcurrencyAndMultithreadingComponent,
+    CoroutinesAndAsynchronousProgrammingComponent,
+    MemoryManagementComponent,
+    PerformanceOptimizationComponent,
+    DynamicTypingAndTypeAnnotationsComponent,
+    UnicodeAndInternationalizationComponent,
+    CExtensionsAndCythonComponent
   ],
   imports: [
     BrowserModule,
