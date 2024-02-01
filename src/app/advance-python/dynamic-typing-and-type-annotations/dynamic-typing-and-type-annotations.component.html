@@ -1,0 +1,59 @@
+<h4>Dynamic Typing and Type Annotations in Python</h4>
+<p>Dynamic typing and type annotations are important concepts in Python that relate to how data types are
+    handled in the language and how you can provide hints about the expected types of variables and function
+    parameters.</p>
+
+<li>Dynamic Typing</li>
+<p>Python is a dynamically typed language, which means that you don't need to declare the data type of a
+    variable explicitly. The data type of a variable is determined at runtime based on the value it holds. This
+    allows for more flexibility but requires careful attention to avoid type-related errors.</p>
+
+<pre><code>
+x = 5          # x is an integer
+x = "Hello"    # x is now a string
+    </code></pre>
+
+<li>Type Annotations</li>
+<p>While Python is dynamically typed, you can provide type hints using type annotations to indicate the expected
+    data types of variables, function parameters, and return values. Type annotations are primarily used to
+    improve code readability and for tools like static type checkers and IDEs.</p>
+
+<pre><code>
+def add(a: int, b: int) -&gt; int:
+    return a + b
+    </code></pre>
+
+<li>Static Type Checkers</li>
+<p>Tools like <code>mypy</code> can analyze your code and provide static type checking based on the type
+    annotations you've added. This helps catch type-related errors before runtime.</p>
+
+<pre><code>
+# Assuming this is saved in a file named 'example.py'
+def add(a: int, b: int) -&gt; int:
+    return a + b
+
+# Running mypy
+# mypy example.py
+    </code></pre>
+
+<li>Type Annotations for Variables</li>
+<p>You can also annotate variables with type hints to provide additional context about their expected types:</p>
+
+<pre><code>
+x: int = 5
+name: str = "Alice"
+    </code></pre>
+
+<li>Optional and Union Types</li>
+<p>You can indicate that a parameter can accept multiple types using the <code>Union</code> type from the
+    <code>typing</code> module. You can also indicate that a parameter can be of a certain type or
+    <code>None</code> using the <code>Optional</code> type.
+</p>
+
+<pre><code [innerHTML]="union_optional"></code></pre>
+
+<p>Type annotations provide valuable information about the expected types of variables and function parameters,
+    improving code quality and documentation. They also help you catch type-related errors early during
+    development. However, remember that Python's dynamic nature means that type annotations are not enforced at
+    runtime; they primarily serve as documentation and can be used by static type checkers to identify potential
+    issues.</p>

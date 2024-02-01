@@ -1,0 +1,58 @@
+<h4>Generators in Python</h4>
+<p>Generators in Python are a way to create iterators in a more concise and memory-efficient manner. They allow
+    you to generate values on-the-fly instead of generating all values at once and storing them in memory.
+    Generators are particularly useful for handling large data sets or infinite sequences. They are defined
+    using functions with the <code>yield</code> keyword.</p>
+
+<li>Example: Simple Generator</li>
+<pre><code>
+def count_up_to(limit):
+    count = 1
+    while count <= limit:
+        yield count
+        count += 1
+
+# Using the generator
+counter = count_up_to(5)
+for num in counter:
+    print(num)
+    </code></pre>
+
+<p>In this example, the <code>count_up_to</code> function generates numbers from 1 to the given
+    <code>limit</code>. The <code>yield</code> statement is used to yield values one at a time. When the
+    <code>for</code> loop iterates over the generator, it calls the generator function until it reaches the
+    <code>yield</code> statement, then pauses and resumes when the next value is requested.
+</p>
+
+<li>Benefits of Generators</li>
+<ul>
+    <li><strong>Memory Efficiency:</strong> Since generators produce values on-the-fly, they don't store all
+        values in memory at once. This is particularly advantageous for working with large data sets.</li>
+    <li><strong>Lazy Evaluation:</strong> Values are generated only when needed, reducing unnecessary
+        computation.</li>
+    <li><strong>Infinite Sequences:</strong> Generators can represent infinite sequences (e.g., Fibonacci
+        sequence) without consuming infinite memory.</li>
+    <li><strong>Readable Code:</strong> Generators lead to more readable and modular code when dealing with
+        iteration and sequencing.</li>
+    <li><strong>Performance:</strong> Generators can improve the performance of your code, as they avoid the
+        overhead of creating and managing large data structures.</li>
+    <li><strong>State Maintenance:</strong> Generators can maintain their state between successive calls,
+        allowing them to remember their context.</li>
+</ul>
+
+<li>Example: Infinite Sequence Generator</li>
+<pre><code>
+def fibonacci():
+    a, b = 0, 1
+    while True:
+        yield a
+        a, b = b, a + b
+
+fib = fibonacci()
+for _ in range(10):
+    print(next(fib))
+    </code></pre>
+
+<p>Generators are a powerful tool for managing and iterating over sequences of data without consuming excessive
+    memory. They provide a way to work with data efficiently and seamlessly, making them a valuable feature in
+    Python.</p>

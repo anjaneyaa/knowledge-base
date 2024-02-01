@@ -1,0 +1,62 @@
+<h4>Context Managers in Python</h4>
+<p>Context managers in Python provide a convenient and reliable way to manage resources, such as file handles or
+    network connections, by taking care of resource allocation and cleanup automatically. They are often used
+    with the <code>with</code> statement and follow the "context manager" protocol using the
+    <code>__enter__()</code> and <code>__exit__()</code> methods.
+</p>
+
+<li>Using Context Managers</li>
+<p>Context managers are typically used with the <code>with</code> statement. This ensures that the resource is
+    properly allocated and released, even if an exception occurs.</p>
+<pre><code>
+with open("file.txt", "r") as file:
+    content = file.read()
+    # Do something with the content
+# File is automatically closed outside the 'with' block
+    </code></pre>
+
+<li>Creating a Context Manager</li>
+<p>You can create your own context manager by defining a class with <code>__enter__()</code> and
+    <code>__exit__()</code> methods.
+</p>
+<pre><code>
+class MyContext:
+    def __enter__(self):
+        # Code executed when entering the 'with' block
+        print("Entering the context")
+        return self  # The returned value can be accessed in the 'as' clause
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        # Code executed when exiting the 'with' block
+        print("Exiting the context")
+        # 'exc_type', 'exc_value', and 'traceback' capture any exceptions raised
+        return False  # If True, exceptions are suppressed; if False, exceptions are propagated
+
+with MyContext() as ctx:
+    # Code inside the 'with' block
+    print("Inside the block")
+    </code></pre>
+
+<li>Built-in Context Managers</li>
+<p>Python provides built-in context managers through the <code>contextlib</code> module and certain built-in
+    functions.</p>
+<ul>
+    <li><code>open()</code> function: Context manager for file handling.</li>
+    <li><code>threading.Lock()</code>: Context manager for managing thread locks.</li>
+    <li><code>contextlib.closing()</code>: Wraps an object to ensure its <code>close()</code> method is called.
+    </li>
+</ul>
+<pre><code>
+from contextlib import closing
+
+with open("file.txt", "r") as file:
+    # Code to read and process the file
+
+with closing(socket.socket(socket.AF_INET, socket.SOCK_STREAM)) as sock:
+    # Code to work with the socket
+    </code></pre>
+
+<p>Context managers help ensure proper resource management, prevent resource leaks, and enhance code readability
+    by encapsulating setup and teardown code. They are especially useful when working with files, database
+    connections, network sockets, and other resources that need to be handled correctly in a managed
+    environment.</p>

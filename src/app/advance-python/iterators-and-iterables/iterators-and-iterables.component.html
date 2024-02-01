@@ -1,0 +1,61 @@
+<h4>Iterators and Iterables in Python</h4>
+<p>Iterators and iterables are fundamental concepts in Python that allow you to work with sequences of data
+    efficiently. They are used to loop over collections or perform iteration operations. Here's an overview of
+    what iterators and iterables are and how they work:</p>
+
+<li>Iterable</li>
+<p>An iterable is any object that can be looped over using a <code>for</code> loop. It has an
+    <code>__iter__()</code> method that returns an iterator.
+</p>
+<pre><code>
+iterable = [1, 2, 3, 4, 5]
+for item in iterable:
+    print(item)
+    </code></pre>
+
+<li>Iterator</li>
+<p>An iterator is an object that implements the <code>__next__()</code> method, which returns the next item from
+    the sequence. It also has an <code>__iter__()</code> method that returns itself.</p>
+<pre><code>
+class MyIterator:
+    def __init__(self, data):
+        self.data = data
+        self.index = 0
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.index < len(self.data):
+            result = self.data[self.index]
+            self.index += 1
+            return result
+        else:
+            raise StopIteration
+
+my_iterable = MyIterator([1, 2, 3, 4, 5])
+for item in my_iterable:
+    print(item)
+    </code></pre>
+
+<li>Built-in Iterators and Iterables</li>
+<p>Python provides built-in functions and objects that work with iterators and iterables:</p>
+<ul>
+    <li><code>iter(iterable)</code>: Returns an iterator for the given iterable.</li>
+    <li><code>next(iterator)</code>: Retrieves the next item from the iterator.</li>
+</ul>
+<pre><code>
+my_list = [1, 2, 3, 4, 5]
+my_iterator = iter(my_list)
+print(next(my_iterator))  # Output: 1
+    </code></pre>
+
+<li>Iterable vs. Iterator</li>
+<ul>
+    <li>An iterable is an object that can be looped over.</li>
+    <li>An iterator is an object that maintains its state and can provide items one by one.</li>
+</ul>
+
+<p>Understanding the concepts of iterators and iterables is essential for writing efficient and readable Python
+    code when working with collections of data. Many built-in functions and libraries in Python rely on these
+    concepts for iteration and data processing.</p>
