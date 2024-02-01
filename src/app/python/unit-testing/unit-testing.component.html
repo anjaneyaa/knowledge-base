@@ -1,1 +1,73 @@
-<p>unit-testing works!</p>
+<section>
+    <h5><strong>Unit Testing in Python</strong></h5>
+    <p>Unit testing is a software testing technique where individual units or components of a program are tested
+        in
+        isolation to ensure they work as expected. In Python, the built-in <code>unittest</code> framework
+        provides
+        a way to create and run unit tests. Here's a basic overview:</p>
+
+    <ol>
+        <li><strong>Import <code>unittest</code></strong>:
+            <p>First, import the <code>unittest</code> module.</p>
+            <pre><code>import unittest</code></pre>
+        </li>
+        <li><strong>Create Test Cases</strong>:
+            <p>Create a test case class by subclassing <code>unittest.TestCase</code>. Each test case is a
+                method
+                that starts with <code>"test_"</code> and contains assertions to verify expected outcomes.</p>
+            <div class="code-background">
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+                <div class="code">
+                    <pre><code>class MyTestCase(unittest.TestCase):
+def test_addition(self):
+self.assertEqual(2 + 2, 4)
+   
+def test_subtraction(self):
+self.assertEqual(5 - 3, 2)</code></pre>
+                </div>
+            </div>
+        </li>
+        <li><strong>Test Discovery</strong>:
+            <p>To run your tests, use the command-line test runner provided by Python's <code>-m unittest</code>
+                module.</p>
+            <pre><code>python -m unittest test_module.py</code></pre>
+            <p>Replace <code>test_module.py</code> with the name of your test module.</p>
+        </li>
+        <li><strong>Assertions</strong>:
+            <p>The <code>unittest.TestCase</code> class provides various assertion methods to check conditions.
+                Some
+                common assertions are:</p>
+            <ul>
+                <li><code>assertEqual(a, b)</code>: Check if <code>a</code> is equal to <code>b</code>.</li>
+                <li><code>assertNotEqual(a, b)</code>: Check if <code>a</code> is not equal to <code>b</code>.
+                </li>
+                <li><code>assertTrue(expr)</code>: Check if <code>expr</code> is <code>True</code>.</li>
+                <li><code>assertFalse(expr)</code>: Check if <code>expr</code> is <code>False</code>.</li>
+            </ul>
+        </li>
+        <li><strong>Setup and Teardown</strong>:
+            <p>You can define <code>setUp()</code> and <code>tearDown()</code> methods in your test class to
+                prepare
+                and clean up resources before and after each test.</p>
+            <div class="code-background">
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+                <div class="code">
+                    <pre><code>class MyTestCase(unittest.TestCase):
+def setUp(self):
+# Set up resources
+pass
+
+def tearDown(self):
+# Clean up resources
+pass</code></pre>
+                </div>
+            </div>
+        </li>
+    </ol>
+
+    <p>Unit testing helps catch bugs early in the development process and provides a safety net when making
+        changes
+        to your code. It encourages modular and maintainable code by ensuring that individual components work
+        correctly in isolation.</p>
+
+</section>

@@ -1,1 +1,113 @@
-<p>data-science-and-analysis works!</p>
+<section>
+    <h5><strong>Data Science in Python</strong></h5>
+    <p>Data science and analysis in Python involve using various libraries and tools to manipulate, analyze, and
+        visualize data. Here's an overview of the key components and steps involved in data science using
+        Python:
+    </p>
+    <ol>
+        <li><strong>Data Collection and Preparation</strong></li>
+        <ul>
+            <li><strong>Collect data from various sources such as databases, APIs, web scraping, CSV files,
+                    etc.</strong></li>
+            <li><strong>Clean and preprocess the data by handling missing values, outliers, and formatting
+                    issues.</strong></li>
+        </ul>
+
+        <li><strong>Data Manipulation and Analysis Libraries</strong></li>
+        <ul>
+            <li><strong>NumPy</strong>: Provides support for multi-dimensional arrays and mathematical
+                functions.
+            </li>
+            <li><strong>Pandas</strong>: Offers data structures (DataFrames and Series) and tools for data
+                manipulation
+                and analysis.</li>
+        </ul>
+        <div class="code-background">
+            <app-code-template [formInputText]="data_analysis"></app-code-template>
+            <div class="code">
+                <pre><code [innerHTML]="data_analysis"></code></pre>
+            </div>
+        </div>
+
+        <li><strong>Data Visualization</strong></li>
+        <ul>
+            <li><strong>Matplotlib</strong>: A versatile library for creating static, interactive, and animated
+                visualizations.</li>
+            <li><strong>Seaborn</strong>: Built on top of Matplotlib, Seaborn provides higher-level interfaces
+                for
+                statistical visualization.</li>
+        </ul>
+        <div class="code-background">
+            <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+            <div class="code">
+                <pre><code>
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+data = sns.load_dataset('iris')
+sns.pairplot(data, hue='species')
+plt.show()
+</code></pre>
+            </div>
+        </div>
+
+        <li><strong>Data Analysis and Statistics</strong></li>
+        <ul>
+            <li><strong>SciPy</strong>: A library for scientific and technical computing, including functions
+                for
+                optimization, integration, interpolation, and more.</li>
+            <li><strong>Statsmodels</strong>: Provides tools for estimating and interpreting statistical models.
+            </li>
+        </ul>
+        <div class="code-background">
+            <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+            <div class="code">
+                <pre><code>
+import scipy.stats as stats
+
+data = [10, 12, 15, 18, 20]
+mean = np.mean(data)
+std_dev = np.std(data)
+t_stat, p_value = stats.ttest_1samp(data, popmean=15)
+</code></pre>
+            </div>
+        </div>
+
+        <li><strong>Machine knowledge-base</strong></li>
+        <ul>
+            <li><strong>Scikit-learn</strong>: A comprehensive library for machine knowledge-base tasks such as
+                classification, regression, clustering, and more.</li>
+            <li><strong>TensorFlow</strong> and <strong>PyTorch</strong>: Deep knowledge-base frameworks for building
+                and
+                training neural networks.</li>
+        </ul>
+        <div class="code-background">
+            <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+            <div class="code">
+                <pre><code>
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+model = LinearRegression()
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
+mse = mean_squared_error(y_test, y_pred)
+</code></pre>
+            </div>
+        </div>
+
+        <li>Data Analysis Workflow</li>
+        <p>Combine the above components in a structured workflow to clean, analyze, visualize, and model data
+            for
+            insights and decision-making.</p>
+
+        <p>Python's ecosystem of libraries and tools makes it a popular choice for data science and analysis. It
+            offers
+            a versatile environment for handling every step of the data science process, from data acquisition
+            to
+            model
+            deployment.</p>
+    </ol>
+</section>

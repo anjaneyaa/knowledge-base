@@ -1,1 +1,101 @@
-<p>debugging-and-profiling works!</p>
+<section>
+    <h5><strong>Debugging and Profiling in Python</strong></h5>
+    <p>Debugging and profiling are essential techniques for identifying and fixing issues in your Python code,
+        as
+        well as optimizing its performance. Here's an overview of debugging and profiling techniques in Python:
+    </p>
+
+    <strong>Debugging:</strong>
+    <ol>
+        <li><strong>Print Statements</strong>:
+            <p>The simplest way to debug is by adding print statements to your code to display variable values
+                and
+                control flow.</p>
+        </li>
+        <li><strong>Using a Debugger</strong>:
+            <p>Python comes with a built-in debugger called <code>pdb</code>. You can insert breakpoints in your
+                code and interactively step through it to inspect variables and identify issues.</p>
+            <div class="code-background">
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+                <div class="code">
+                    <pre><code>import pdb
+
+def my_function():
+x = 10
+y = 5
+pdb.set_trace()  # Breakpoint
+result = x + y
+print(result)
+</code></pre>
+                </div>
+            </div>
+        </li>
+        <li><strong>Visual Debuggers</strong>:
+            <p>Integrated Development Environments (IDEs) like Visual Studio Code, PyCharm, and Eclipse offer
+                visual
+                debuggers with user-friendly interfaces for setting breakpoints, inspecting variables, and more.
+            </p>
+        </li>
+    </ol>
+
+    <strong>Profiling:</strong>
+    <ol>
+        <li><strong>Time Profiling</strong>:
+            <p>The <code>cProfile</code> module allows you to profile your code's execution time. It helps
+                identify
+                bottlenecks and areas where optimizations are needed.</p>
+            <pre><code>import cProfile
+
+def my_function():
+# Your code here
+
+cProfile.run('my_function()')
+</code></pre>
+        </li>
+        <li><strong>Memory Profiling</strong>:
+            <p>The <code>memory_profiler</code> module helps you profile memory usage. It identifies
+                memory-intensive parts of your code and helps you optimize memory consumption.</p>
+            <div class="code-background">
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+                <div class="code">
+                    <pre><code>pip install memory-profiler</code></pre>
+                    <pre><code>from memory_profiler import profile
+
+@profile
+def my_function():
+# Your code here
+</code></pre>
+                </div>
+            </div>
+        </li>
+        <li><strong>Profiling with <code>timeit</code></strong>:
+            <p>The <code>timeit</code> module allows you to measure the execution time of small code snippets.
+            </p>
+            <div class="code-background">
+                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+                <div class="code">
+                    <pre><code>import timeit
+
+def my_function():
+# Your code here
+
+time_taken = timeit.timeit(my_function, number=1000)
+print("Time taken:", time_taken)
+</code></pre>
+                </div>
+            </div>
+        </li>
+        <li><strong>Using Profiling Tools</strong>:
+            <p>Profiling tools like <code>line_profiler</code> and <code>py-spy</code> offer more advanced
+                profiling
+                capabilities, such as line-by-line execution time analysis and real-time visualization.</p>
+            <pre><code>pip install line-profiler</code></pre>
+            <pre><code>pip install py-spy</code></pre>
+        </li>
+    </ol>
+
+    <p>Both debugging and profiling are crucial for identifying and resolving issues in your code and ensuring
+        that
+        your applications are performing optimally.</p>
+
+</section>

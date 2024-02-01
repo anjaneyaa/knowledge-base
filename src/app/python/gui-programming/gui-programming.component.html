@@ -1,1 +1,117 @@
-<p>gui-programming works!</p>
+<section>
+    <h5><strong>GUI Programming in Python</strong></h5>
+    <p>Graphical User Interface (GUI) programming in Python allows you to create desktop applications with
+        graphical
+        components and user-friendly interfaces. Here are some common libraries and frameworks you can use for
+        GUI
+        programming in Python:</p>
+    <ol>
+        <li><strong>Tkinter</strong></li>
+        <p>Tkinter is the standard GUI library that comes with Python. It's easy to use and suitable for
+            creating
+            simple
+            GUI applications.</p>
+        <div class="code-background">
+            <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+            <div class="code">
+                <pre><code>
+import tkinter as tk
+
+root = tk.Tk()
+label = tk.Label(root, text="Hello, Tkinter!")
+label.pack()
+root.mainloop()
+</code></pre>
+            </div>
+        </div>
+
+        <li><strong>PyQt and PySide</strong></li>
+        <p>PyQt and PySide are powerful libraries for building cross-platform GUI applications. They provide a
+            wide
+            range of widgets and features.</p>
+        <div class="code-background">
+            <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+            <div class="code">
+                <pre><code>
+from PyQt5 import QtWidgets
+
+app = QtWidgets.QApplication([])
+window = QtWidgets.QWidget()
+label = QtWidgets.QLabel("Hello, PyQt!")
+layout = QtWidgets.QVBoxLayout()
+layout.addWidget(label)
+window.setLayout(layout)
+window.show()
+app.exec_()
+</code></pre>
+            </div>
+        </div>
+
+        <li><strong>wxPython</strong></li>
+        <p>wxPython is another cross-platform GUI library that offers native-looking interfaces on different
+            platforms.
+        </p>
+        <div class="code-background">
+            <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+            <div class="code">
+                <pre><code>
+import wx
+
+app = wx.App(False)
+frame = wx.Frame(None, wx.ID_ANY, "Hello, wxPython!")
+frame.Show(True)
+app.MainLoop()
+</code></pre>
+            </div>
+        </div>
+
+        <li><strong>Kivy</strong></li>
+        <p>Kivy is a framework for creating multi-touch applications. It's suitable for building applications
+            for
+            touch
+            devices and has a modern and intuitive API.</p>
+        <div class="code-background">
+            <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+            <div class="code">
+                <pre><code>
+from kivy.app import App
+from kivy.uix.label import Label
+
+class MyApp(App):
+def build(self):
+return Label(text="Hello, Kivy!")
+
+MyApp().run()
+</code></pre>
+            </div>
+        </div>
+
+        <li><strong>GTK+</strong></li>
+        <p>The PyGObject library allows you to create GUI applications using GTK+ (GIMP Toolkit).</p>
+        <div class="code-background">
+            <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+            <div class="code">
+                <pre><code>
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+
+class MyWindow(Gtk.Window):
+def __init__(self):
+Gtk.Window.__init__(self, title="Hello, GTK+")
+label = Gtk.Label(label="Hello, GTK!")
+self.add(label)
+
+win = MyWindow()
+win.connect("destroy", Gtk.main_quit)
+win.show_all()
+Gtk.main()
+</code></pre>
+            </div>
+        </div>
+
+        <p>Each of these libraries and frameworks has its own strengths and knowledge-base curve. Choose the one that
+            best
+            suits your needs and project requirements for creating user-friendly GUI applications.</p>
+    </ol>
+</section>

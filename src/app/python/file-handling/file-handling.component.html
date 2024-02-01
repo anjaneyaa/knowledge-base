@@ -1,1 +1,69 @@
-<p>file-handling works!</p>
+<h5><strong>File Handling in Python</strong></h5>
+<p>File handling in Python allows you to work with files, both for reading and writing data. Here's how you
+    can
+    use file handling operations:</p>
+
+<ol>
+    <li><strong>Opening a File</strong></li>
+    <p>To work with a file, you need to open it using the <code>open()</code> function. You specify the file
+        name
+        and the mode in which you want to open the file (read, write, or both).</p>
+    <div class="code-background">
+        <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+        <div class="code">
+            <pre><code># Opening a file for reading
+file = open("example.txt", "r")
+
+# Opening a file for writing
+file = open("output.txt", "w")</code></pre>
+        </div>
+    </div>
+
+    <li><strong>Reading from a File</strong></li>
+    <p>You can read the contents of a file using methods like <code>read()</code>, <code>readline()</code>,
+        or
+        <code>readlines()</code>.
+    </p>
+    <div class="code-background">
+        <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+        <div class="code">
+            <pre><code># Reading the entire content
+content = file.read()
+
+# Reading one line
+line = file.readline()
+
+# Reading all lines into a list
+lines = file.readlines()</code></pre>
+        </div>
+    </div>
+
+    <li><strong>Writing to a File</strong></li>
+    <p>You can write to a file using methods like <code>write()</code>.</p>
+    <pre><code># Writing a string to the file
+file.write("Hello, world!")</code></pre>
+
+    <li><strong>Closing a File</strong></li>
+    <p>It's important to close the file after you're done working with it to free up system resources.</p>
+    <pre><code>file.close()</code></pre>
+
+    <li><strong>Using 'with' Statement (Context Manager)</strong></li>
+    <p>The <code>with</code> statement ensures that the file is properly closed after you're done, even if
+        an
+        exception occurs.</p>
+    <pre><code>with open("example.txt", "r") as file:
+content = file.read()</code></pre>
+
+    <li><strong>Appending to a File</strong></li>
+    <p>To add content to an existing file without overwriting it, you can open the file in append mode
+        ("a").
+    </p>
+    <pre><code>with open("output.txt", "a") as file:
+file.write("Additional content")</code></pre>
+
+    <p>File handling is a fundamental aspect of programming for tasks involving data storage, retrieval, and
+        manipulation. Always make sure to properly close the file after you're done with it to avoid
+        resource
+        leaks.
+    </p>
+</ol>

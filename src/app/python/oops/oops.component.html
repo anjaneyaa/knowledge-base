@@ -1,1 +1,83 @@
-<p>oops works!</p>
+<section>
+    <h5><strong>Object-Oriented Programming in Python</strong></h5>
+    <p>Object-Oriented Programming (OOP) is a programming paradigm that focuses on organizing code around
+        objects,
+        which are instances of classes. Python is an object-oriented language, and here's how you can work with
+        OOP
+        concepts:</p>
+
+    <ol>
+        <li><strong>Classes and Objects</strong></li>
+        <p><strong>Class:</strong> A blueprint or template for creating objects. It defines attributes (data)
+            and
+            methods (functions) that the objects will have.</p>
+        <div class="code-background">
+            <app-code-template [formInputText]="class_Person"></app-code-template>
+            <div class="code">
+                <pre><code [innerHTML]="class_Person"></code></pre>
+            </div>
+        </div>
+        <p><strong>Object:</strong> An instance of a class with its own unique data and behavior.</p>
+        <pre><code>person1 = Person("Alice", 30)
+person2 = Person("Bob", 25)
+
+print(person1.greet())  // Output: Hello, my name is Alice and I am 30 years old.</code></pre>
+
+        <li><strong>Attributes and Methods</strong></li>
+        <p><strong>Attributes:</strong> Variables that belong to an object and store its data.</p>
+        <p><strong>Methods:</strong> Functions defined within a class that can be called on objects of that
+            class.
+        </p>
+
+        <li><strong>Constructor (`__init__`)</strong></li>
+        <p>The <code>__init__</code> method is used to initialize object attributes when an object is created.
+        </p>
+        <pre><code>def __init__(self, attribute1, attribute2):
+self.attribute1 = attribute1
+self.attribute2 = attribute2</code></pre>
+
+        <li><strong>Inheritance</strong></li>
+        <p>Inheritance allows a class (subclass/derived class) to inherit attributes and methods from another
+            class
+            (base class/superclass).</p>
+        <pre><code>class Student(Person):
+def __init__(self, name, age, student_id):
+super().__init__(name, age)
+self.student_id = student_id</code></pre>
+
+        <li><strong>Encapsulation</strong></li>
+        <p>Encapsulation restricts direct access to certain attributes and methods, promoting data hiding and
+            abstraction.</p>
+
+        <li><strong>Polymorphism</strong></li>
+        <p>Polymorphism allows objects of different classes to be treated as objects of a common superclass. It
+            enables
+            method overriding and dynamic method binding.</p>
+        <div class="code-background">
+            <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+            <div class="code">
+                <pre><code>class Shape:
+def area(self):
+pass
+
+class Circle(Shape):
+def area(self, radius):
+return 3.14 * radius ** 2
+
+class Rectangle(Shape):
+def area(self, length, width):
+return length * width</code></pre>
+            </div>
+        </div>
+
+        <li><strong>Abstraction</strong></li>
+        <p>Abstraction focuses on providing a simplified interface for interacting with objects, hiding complex
+            implementation details.</p>
+
+        <p>OOP provides a structured and modular approach to programming, making code more organized,
+            maintainable,
+            and
+            reusable. It models real-world concepts effectively and encourages better problem-solving through
+            encapsulation and abstraction.</p>
+    </ol>
+</section>

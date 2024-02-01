@@ -1,1 +1,74 @@
-<p>functions works!</p>
+<h5><strong>Functions in Python</strong></h5>
+<p>Functions in Python are reusable blocks of code that perform specific tasks. They help organize code,
+    make it
+    more modular, and reduce redundancy. Here's how to work with functions:</p>
+<ol>
+    <li><strong>Defining a Function</strong></li>
+    <p>To define a function, use the <code>def</code> keyword followed by the function name and parameters
+        within
+        parentheses. The function body is indented below.</p>
+
+    <pre><code>def greet(name):
+    print("Hello, " + name)</code></pre>
+
+    <li><strong>Calling a Function</strong></li>
+    <p>To use a function, call it by its name and provide arguments if needed.</p>
+    <pre><code>greet("Alice")</code></pre>
+
+    <li><strong>Parameters and Arguments</strong></li>
+    <p>Parameters are variables in a function's definition. Arguments are values passed to a function when
+        it's
+        called.</p>
+    <pre><code>def add(a, b):
+     return a + b
+
+    result = add(3, 5)  # Here, 3 and 5 are arguments</code></pre>
+
+    <li><strong>Return Statement</strong></li>
+    <p>Functions can return values using the <code>return</code> statement. If no return value is specified,
+        the
+        function returns <code>None</code>.</p>
+    <pre><code>def square(x):
+    return x * x
+
+    squared_value = square(4)</code></pre>
+
+    <li><strong>Default Arguments</strong></li>
+    <p>You can provide default values for function parameters, which are used when the caller doesn't
+        provide a
+        value for that parameter.</p>
+    <pre><code>def power(base, exponent=2):
+    return base ** exponent
+    
+    result1 = power(3)      # Uses default exponent of 2
+    result2 = power(2, 3)   # Uses provided exponent of 3</code></pre>
+
+    <li><strong>Variable Number of Arguments</strong></li>
+    <p>Functions can accept a variable number of arguments using <code>*args</code> for positional arguments
+        and
+        <code>**kwargs</code> for keyword arguments.
+    </p>
+    <pre><code>def print_args(*args):
+for arg in args:
+print(arg)
+
+print_args(1, 2, 3)</code></pre>
+
+    <li><strong>Scope</strong></li>
+    <p>Variables defined inside a function are in its local scope. Variables defined outside functions are
+        in
+        the
+        global scope.</p>
+    <pre><code>global_var = 10  // Global variable
+
+def demo_scope():
+local_var = 5  // Local variable
+print(global_var)
+print(local_var)
+
+demo_scope()</code></pre>
+
+    <p>Functions are a fundamental building block of Python programming, allowing you to create more
+        organized,
+        reusable, and maintainable code.</p>
+</ol>
