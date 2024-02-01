@@ -1,89 +1,89 @@
 <h5><strong>Exception Handling in Python</strong></h5>
-        <p>Exception handling in Python allows you to handle errors and exceptions gracefully, preventing your
-            program
-            from crashing. Here's how you can use exception handling:</p>
+<p>Exception handling in Python allows you to handle errors and exceptions gracefully, preventing your
+    program
+    from crashing. Here's how you can use exception handling:</p>
 
-        <ol>
-            <li><strong>Try-Except Block</strong></li>
-            <p>Use a <code>try</code> block to enclose the code that might raise an exception. If an exception
-                occurs,
-                the
-                code in the corresponding <code>except</code> block will be executed.</p>
-            <div class="code-background">
-                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
-                <div class="code">
-                    <pre><code>try:
+<ol>
+    <li><strong>Try-Except Block</strong></li>
+    <p>Use a <code>try</code> block to enclose the code that might raise an exception. If an exception
+        occurs,
+        the
+        code in the corresponding <code>except</code> block will be executed.</p>
+    <div class="code-background">
+        <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+        <div class="code">
+            <pre><code>try:
 # Code that might raise an exception
 result = 10 / 0
 except ZeroDivisionError:
 # Code to handle the exception
 print("Division by zero error")</code></pre>
-                </div>
-            </div>
+        </div>
+    </div>
 
-            <li><strong>Multiple Except Blocks</strong></li>
-            <p>You can handle different types of exceptions with multiple <code>except</code> blocks.</p>
-            <div class="code-background">
-                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
-                <div class="code">
-                    <pre><code>try:
+    <li><strong>Multiple Except Blocks</strong></li>
+    <p>You can handle different types of exceptions with multiple <code>except</code> blocks.</p>
+    <div class="code-background">
+        <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+        <div class="code">
+            <pre><code>try:
 value = int("abc")
 except ValueError:
 print("ValueError occurred")
 except ZeroDivisionError:
 print("ZeroDivisionError occurred")</code></pre>
-                </div>
-            </div>
+        </div>
+    </div>
 
-            <li><strong>Exception with an Else Block</strong></li>
-            <p>You can use an <code>else</code> block to execute code when no exception occurs.</p>
-            <div class="code-background">
-                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
-                <div class="code">
-                    <pre><code>try:
+    <li><strong>Exception with an Else Block</strong></li>
+    <p>You can use an <code>else</code> block to execute code when no exception occurs.</p>
+    <div class="code-background">
+        <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+        <div class="code">
+            <pre><code>try:
 x = 10 / 2
 except ZeroDivisionError:
 print("Cannot divide by zero")
 else:
 print("Result:", x)</code></pre>
-                </div>
-            </div>
+        </div>
+    </div>
 
-            <li><strong>Exception with a Finally Block</strong></li>
-            <p>The <code>finally</code> block always executes, whether an exception occurred or not. It's commonly
-                used
-                to
-                release resources.</p>
-            <div class="code-background">
-                <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
-                <div class="code">
-                    <pre><code>try:
+    <li><strong>Exception with a Finally Block</strong></li>
+    <p>The <code>finally</code> block always executes, whether an exception occurred or not. It's commonly
+        used
+        to
+        release resources.</p>
+    <div class="code-background">
+        <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+        <div class="code">
+            <pre><code>try:
 file = open("example.txt", "r")
 content = file.read()
 except FileNotFoundError:
 print("File not found")
 finally:
 file.close()</code></pre>
-                </div>
-            </div>
+        </div>
+    </div>
 
-            <li><strong>Raising Exceptions</strong></li>
-            <p>You can manually raise exceptions using the <code>raise</code> statement.</p>
-            <pre><code>def divide(a, b):
+    <li><strong>Raising Exceptions</strong></li>
+    <p>You can manually raise exceptions using the <code>raise</code> statement.</p>
+    <pre><code>def divide(a, b):
 if b == 0:
     raise ZeroDivisionError("Division by zero is not allowed")
 return a / b</code></pre>
 
-            <li><strong>Custom Exception Classes</strong></li>
-            <p>You can define your own custom exception classes by subclassing built-in exceptions or the
-                <code>Exception</code> class.
-            </p>
-            <pre><code>class CustomError(Exception):
+    <li><strong>Custom Exception Classes</strong></li>
+    <p>You can define your own custom exception classes by subclassing built-in exceptions or the
+        <code>Exception</code> class.
+    </p>
+    <pre><code>class CustomError(Exception):
 def __init__(self, message):
     self.message = message</code></pre>
 
-            <p>Exception handling allows you to anticipate and handle errors, making your code more robust and
-                user-friendly. It's crucial for creating reliable programs that can gracefully handle unexpected
-                situations.
-            </p>
-        </ol>
+    <p>Exception handling allows you to anticipate and handle errors, making your code more robust and
+        user-friendly. It's crucial for creating reliable programs that can gracefully handle unexpected
+        situations.
+    </p>
+</ol>

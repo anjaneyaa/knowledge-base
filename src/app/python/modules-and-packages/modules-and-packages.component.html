@@ -1,57 +1,55 @@
-<section>
-    <h5><strong>Modules and Packages in Python</strong></h5>
-    <p>Modules and packages are key concepts in Python that help organize code into reusable and manageable
-        components. Here's how they work:</p>
+<h5><strong>Modules and Packages in Python</strong></h5>
+<p>Modules and packages are key concepts in Python that help organize code into reusable and manageable
+    components. Here's how they work:</p>
 
-    <ol>
-        <li><strong>Modules</strong></li>
-        <p>A module is a single Python file containing variables, functions, and classes that can be imported
-            and
-            used
-            in other programs.</p>
-        <p>Create a module by writing your code in a <code>.py</code> file, e.g., <code>my_module.py</code>.</p>
-        <pre><code [innerHTML]="my_module"></code></pre>
-        <p>Import and use functions/classes from the module in another file.</p>
-        <pre><code>import my_module
+<ol>
+    <li><strong>Modules</strong></li>
+    <p>A module is a single Python file containing variables, functions, and classes that can be imported
+        and
+        used
+        in other programs.</p>
+    <p>Create a module by writing your code in a <code>.py</code> file, e.g., <code>my_module.py</code>.</p>
+    <pre><code [innerHTML]="my_module"></code></pre>
+    <p>Import and use functions/classes from the module in another file.</p>
+    <pre><code>import my_module
 
 result = my_module.add(3, 5)
 greeting = my_module.greet("Alice")</code></pre>
 
-        <li><strong>Packages</strong></li>
-        <p>A package is a collection of related modules organized in directories. It allows for a hierarchical
-            structure
-            to manage larger projects.</p>
-        <p>Create a directory for your package and include an <code>__init__.py</code> file in it.</p>
-        <pre><code>my_package/
+    <li><strong>Packages</strong></li>
+    <p>A package is a collection of related modules organized in directories. It allows for a hierarchical
+        structure
+        to manage larger projects.</p>
+    <p>Create a directory for your package and include an <code>__init__.py</code> file in it.</p>
+    <pre><code>my_package/
 __init__.py
 module1.py
 module2.py</code></pre>
-        <p>Import modules from the package using dot notation.</p>
-        <pre><code>import my_package.module1
+    <p>Import modules from the package using dot notation.</p>
+    <pre><code>import my_package.module1
 result = my_package.module1.add(3, 5)</code></pre>
-        <p>You can also use the <code>from ... import ...</code> syntax.</p>
-        <pre><code>from my_package import module2
+    <p>You can also use the <code>from ... import ...</code> syntax.</p>
+    <pre><code>from my_package import module2
 greeting = module2.greet("Bob")</code></pre>
 
-        <li><strong><code>__init__.py</code></strong></li>
-        <p>The <code>__init__.py</code> file in a package directory can be left empty or contain initialization
-            code
-            for
-            the package.</p>
+    <li><strong><code>__init__.py</code></strong></li>
+    <p>The <code>__init__.py</code> file in a package directory can be left empty or contain initialization
+        code
+        for
+        the package.</p>
 
-        <li><strong>Subpackages</strong></li>
-        <p>Packages can have subpackages, allowing you to organize modules further.</p>
-        <pre><code>my_package/
+    <li><strong>Subpackages</strong></li>
+    <p>Packages can have subpackages, allowing you to organize modules further.</p>
+    <pre><code>my_package/
 __init__.py
 module1.py
 subpackage/
 __init__.py
 module3.py</code></pre>
-        <pre><code>from my_package.subpackage import module3
+    <pre><code>from my_package.subpackage import module3
 result = module3.multiply(4, 6)</code></pre>
 
-        <p>Modules and packages promote code reusability, maintainability, and separation of concerns. They are
-            crucial
-            for structuring larger projects and making code more organized and manageable.</p>
-    </ol>
-</section>
+    <p>Modules and packages promote code reusability, maintainability, and separation of concerns. They are
+        crucial
+        for structuring larger projects and making code more organized and manageable.</p>
+</ol>

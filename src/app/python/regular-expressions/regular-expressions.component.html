@@ -1,84 +1,82 @@
-<section>
-    <h5><strong>Regular Expressions in Python</strong></h5>
-    <p>Regular expressions (regex) are powerful tools for pattern matching and manipulation of strings in
-        Python.
-        They allow you to search for, match, and manipulate text based on specific patterns. Here's how you can
-        use
-        regular expressions in Python:</p>
+<h5><strong>Regular Expressions in Python</strong></h5>
+<p>Regular expressions (regex) are powerful tools for pattern matching and manipulation of strings in
+    Python.
+    They allow you to search for, match, and manipulate text based on specific patterns. Here's how you can
+    use
+    regular expressions in Python:</p>
 
-    <ol>
-        <li><strong>Importing the <code>re</code> Module</strong></li>
-        <p>To use regular expressions, you need to import the <code>re</code> module.</p>
-        <pre><code>import re</code></pre>
+<ol>
+    <li><strong>Importing the <code>re</code> Module</strong></li>
+    <p>To use regular expressions, you need to import the <code>re</code> module.</p>
+    <pre><code>import re</code></pre>
 
-        <li><strong>Basic Matching</strong></li>
-        <p>You can use the <code>re.search()</code> function to find the first occurrence of a pattern in a
-            string.
-        </p>
-        <pre><code>pattern = r"world"
+    <li><strong>Basic Matching</strong></li>
+    <p>You can use the <code>re.search()</code> function to find the first occurrence of a pattern in a
+        string.
+    </p>
+    <pre><code>pattern = r"world"
 text = "Hello, world!"
 match = re.search(pattern, text)
 if match:
 print("Pattern found:", match.group())</code></pre>
 
-        <li><strong>Pattern Modifiers</strong></li>
-        <ul>
-            <li><strong><code>r"`string`"</code>: Use raw strings to avoid escaping backslashes.</strong></li>
-            <li><strong><code>re.I</code> (case-insensitive): Use <code>re.search(pattern, text, re.I)</code> to
-                    make
-                    the search
-                    case-insensitive.</strong></li>
-        </ul>
+    <li><strong>Pattern Modifiers</strong></li>
+    <ul>
+        <li><strong><code>r"`string`"</code>: Use raw strings to avoid escaping backslashes.</strong></li>
+        <li><strong><code>re.I</code> (case-insensitive): Use <code>re.search(pattern, text, re.I)</code> to
+                make
+                the search
+                case-insensitive.</strong></li>
+    </ul>
 
-        <li><strong>Character Classes</strong></li>
-        <ul>
-            <li><strong><code>[abc]</code>: Match any of the characters a, b, or c.</strong></li>
-            <li><strong><code>[a-z]</code>: Match any lowercase letter.</strong></li>
-            <li><strong><code>[0-9]</code>: Match any digit.</strong></li>
-        </ul>
+    <li><strong>Character Classes</strong></li>
+    <ul>
+        <li><strong><code>[abc]</code>: Match any of the characters a, b, or c.</strong></li>
+        <li><strong><code>[a-z]</code>: Match any lowercase letter.</strong></li>
+        <li><strong><code>[0-9]</code>: Match any digit.</strong></li>
+    </ul>
 
-        <li><strong>Special Characters</strong></li>
-        <ul>
-            <li><strong><code>\d</code>: Match any digit (0-9).</strong></li>
-            <li><strong><code>\w</code>: Match any alphanumeric character.</strong></li>
-            <li><strong><code>\s</code>: Match any whitespace character.</strong></li>
-        </ul>
+    <li><strong>Special Characters</strong></li>
+    <ul>
+        <li><strong><code>\d</code>: Match any digit (0-9).</strong></li>
+        <li><strong><code>\w</code>: Match any alphanumeric character.</strong></li>
+        <li><strong><code>\s</code>: Match any whitespace character.</strong></li>
+    </ul>
 
-        <li><strong>Quantifiers</strong></li>
-        <ul>
-            <li><strong><code>*</code>: Match zero or more occurrences.</strong></li>
-            <li><strong><code>+</code>: Match one or more occurrences.</strong></li>
-            <li><strong><code>?</code>: Match zero or one occurrence.</strong></li>
-            <li><strong><code [innerHTML]="n_occurrences"></code>: Match exactly n occurrences.</strong></li>
-            <li><strong><code [innerHTML]="n_and_m_occurrences"></code>: Match between n and m occurrences.</strong>
-            </li>
-        </ul>
+    <li><strong>Quantifiers</strong></li>
+    <ul>
+        <li><strong><code>*</code>: Match zero or more occurrences.</strong></li>
+        <li><strong><code>+</code>: Match one or more occurrences.</strong></li>
+        <li><strong><code>?</code>: Match zero or one occurrence.</strong></li>
+        <li><strong><code [innerHTML]="n_occurrences"></code>: Match exactly n occurrences.</strong></li>
+        <li><strong><code [innerHTML]="n_and_m_occurrences"></code>: Match between n and m occurrences.</strong>
+        </li>
+    </ul>
 
-        <li><strong>Anchors</strong></li>
-        <ul>
-            <li><strong><code>^</code>: Match the start of a string.</strong></li>
-            <li><strong><code>$</code>: Match the end of a string.</strong></li>
-        </ul>
+    <li><strong>Anchors</strong></li>
+    <ul>
+        <li><strong><code>^</code>: Match the start of a string.</strong></li>
+        <li><strong><code>$</code>: Match the end of a string.</strong></li>
+    </ul>
 
-        <li><strong>Groups and Capturing</strong></li>
-        <p>Use parentheses to create capturing groups.</p>
-        <div class="code-background">
-            <app-code-template [formInputText]="pattern"></app-code-template>
-            <div class="code">
-                <pre><code [innerHTML]="pattern"></code></pre>
-            </div>
+    <li><strong>Groups and Capturing</strong></li>
+    <p>Use parentheses to create capturing groups.</p>
+    <div class="code-background">
+        <app-code-template [formInputText]="pattern"></app-code-template>
+        <div class="code">
+            <pre><code [innerHTML]="pattern"></code></pre>
         </div>
+    </div>
 
-        <li><strong>Substitution</strong></li>
-        <p>You can use <code>re.sub()</code> to replace matched patterns with other text.</p>
-        <pre><code>pattern = r"\bapple\b"
+    <li><strong>Substitution</strong></li>
+    <p>You can use <code>re.sub()</code> to replace matched patterns with other text.</p>
+    <pre><code>pattern = r"\bapple\b"
 text = "I like apple and pineapple."
 new_text = re.sub(pattern, "orange", text)</code></pre>
 
-        <p>Regular expressions provide a versatile way to work with text data, making it easier to perform
-            complex
-            searches and manipulations in strings. However, they can be complex, so practice and documentation
-            are
-            essential for mastering them.</p>
-    </ol>
-</section>
+    <p>Regular expressions provide a versatile way to work with text data, making it easier to perform
+        complex
+        searches and manipulations in strings. However, they can be complex, so practice and documentation
+        are
+        essential for mastering them.</p>
+</ol>

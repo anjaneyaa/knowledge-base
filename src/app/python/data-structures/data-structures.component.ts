@@ -24,4 +24,6 @@ my_frozenset = frozenset(my_set)
   my_dict['city'] = 'New York'
   age = my_dict['age']
   `;
+  my_set = `my_set = {1, 2, 3}`;
+  my_dict = `my_dict = {'name': 'Alice', 'age': 25}`;
 }

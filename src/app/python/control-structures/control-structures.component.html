@@ -1,57 +1,56 @@
 <h5><strong>Control Structures in Python</strong></h5>
-        <p>Control structures in Python allow you to control the flow of your program. Here are the main control
-            structures:</p>
-        <ol>
-            <li><strong>Conditional Statements (if, elif, else)</strong></li>
-            Used to execute different code blocks based on conditions.
-            <div class="code-background">
-                <app-code-template [formInputText]="conditional_statement"></app-code-template>
-                <div class="code">
-                    <pre><code [innerHTML]="conditional_statement"></code></pre>
-                </div>
-            </div>
-            <li><strong>Loops (for, while)</strong></li>
-            Used to execute a block of code repeatedly.
-            <ul>
-                <li><strong>For Loop</strong></li>
-                <p>Iterates over a sequence (list, tuple, string, etc.).</p>
-                <pre><code>for item in sequence:
+<p>Control structures in Python allow you to control the flow of your program. Here are the main control
+    structures:</p>
+<ol>
+    <li><strong>Conditional Statements (if, elif, else)</strong></li>
+    Used to execute different code blocks based on conditions.
+    <div class="code-background">
+        <app-code-template [formInputText]="conditional_statement"></app-code-template>
+        <div class="code">
+            <pre><code [innerHTML]="conditional_statement"></code></pre>
+        </div>
+    </div>
+    <li><strong>Loops (for, while)</strong></li>
+    Used to execute a block of code repeatedly.
+    <ul>
+        <li><strong>For Loop</strong></li>
+        <p>Iterates over a sequence (list, tuple, string, etc.).</p>
+        <pre><code>for item in sequence:
     # Code to execute for each item in the sequence</code></pre>
 
-                <li><strong>While Loop</strong></li>
-            </ul>
-            <p>Executes a block of code as long as a condition is True.</p>
-            <pre><code>while condition:
+        <li><strong>While Loop</strong></li>
+    </ul>
+    <p>Executes a block of code as long as a condition is True.</p>
+    <pre><code>while condition:
     # Code to execute while the condition is True</code></pre>
 
-            <li><strong>Break and Continue Statements</strong></li>
-            <p>Used to modify the flow of loops.</p>
-            <ul>
-                <li><strong>Break</strong></li>
-                <p>Exits the loop prematurely.</p>
-                <pre><code>for item in sequence:
+    <li><strong>Break and Continue Statements</strong></li>
+    <p>Used to modify the flow of loops.</p>
+    <ul>
+        <li><strong>Break</strong></li>
+        <p>Exits the loop prematurely.</p>
+        <pre><code>for item in sequence:
     if condition:
         break</code></pre>
 
-                <li><strong>Continue</strong></li>
+        <li><strong>Continue</strong></li>
 
-                <p>Skips the current iteration and moves to the next.</p>
-                <pre><code>for item in sequence:
+        <p>Skips the current iteration and moves to the next.</p>
+        <pre><code>for item in sequence:
     if condition:
         continue</code></pre>
 
-                <p>Here's an example demonstrating these control structures:</p>
-                <div class="code-background">
-                    <app-code-template [formInputText]="control_statement"></app-code-template>
-                    <div class="code">
-                        <pre><code [innerHTML]="control_statement"></code></pre>
-                    </div>
-                </div>
-            </ul>
-            <p>Control structures help you create more dynamic and responsive programs by allowing you to make
-                decisions
-                and
-                repeat actions as needed.</p>
+        <p>Here's an example demonstrating these control structures:</p>
+        <div class="code-background">
+            <app-code-template [formInputText]="control_statement"></app-code-template>
+            <div class="code">
+                <pre><code [innerHTML]="control_statement"></code></pre>
+            </div>
+        </div>
+    </ul>
+    <p>Control structures help you create more dynamic and responsive programs by allowing you to make
+        decisions
+        and
+        repeat actions as needed.</p>
 
-        </ol>
-
+</ol>

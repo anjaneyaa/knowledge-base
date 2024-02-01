@@ -1,60 +1,58 @@
-<section>
-    <h5><strong>Working with APIs in Python</strong></h5>
-    <p>Working with APIs (Application Programming Interfaces) in Python allows you to interact with external
-        services, retrieve data, and perform various tasks. Here's a general process for working with APIs:</p>
+<h5><strong>Working with APIs in Python</strong></h5>
+<p>Working with APIs (Application Programming Interfaces) in Python allows you to interact with external
+    services, retrieve data, and perform various tasks. Here's a general process for working with APIs:</p>
 
-    <ol>
-        <li><strong>Choose an API</strong>:
-            <p>Select an API that provides the data or functionality you need. Popular APIs include weather
-                services, social media APIs, financial data APIs, and more.</p>
-        </li>
-        <li><strong>Read API Documentation</strong>:
-            <p>API documentation explains how to make requests, the available endpoints, required parameters,
-                and
-                response formats.</p>
-        </li>
-        <li><strong>Make API Requests</strong>:
-            <p>To retrieve data from an API, you need to make HTTP requests. You can use the
-                <code>requests</code>
-                library, which simplifies the process.
-            </p>
-            <pre><code>import requests
+<ol>
+    <li><strong>Choose an API</strong>:
+        <p>Select an API that provides the data or functionality you need. Popular APIs include weather
+            services, social media APIs, financial data APIs, and more.</p>
+    </li>
+    <li><strong>Read API Documentation</strong>:
+        <p>API documentation explains how to make requests, the available endpoints, required parameters,
+            and
+            response formats.</p>
+    </li>
+    <li><strong>Make API Requests</strong>:
+        <p>To retrieve data from an API, you need to make HTTP requests. You can use the
+            <code>requests</code>
+            library, which simplifies the process.
+        </p>
+        <pre><code>import requests
 
 response = requests.get("https://api.example.com/data")
 data = response.json()</code></pre>
-        </li>
-        <li><strong>Handle Responses</strong>:
-            <p>API responses typically come in JSON format. Parse the JSON data to access the information you
-                need.
-            </p>
-        </li>
-        <li><strong>Authentication</strong>:
-            <p>Many APIs require authentication, which can be done using API keys, tokens, or other methods.
-                Include
-                authentication information in your requests.</p>
-        </li>
-        <li><strong>Error Handling</strong>:
-            <p>API calls can fail due to various reasons. Implement error handling to gracefully handle cases
-                where
-                the API response indicates an error.</p>
-        </li>
-        <li><strong>Rate Limiting</strong>:
-            <p>APIs often have rate limits to prevent abuse. Be mindful of these limits and follow the
-                guidelines
-                provided in the API documentation.</p>
-        </li>
+    </li>
+    <li><strong>Handle Responses</strong>:
+        <p>API responses typically come in JSON format. Parse the JSON data to access the information you
+            need.
+        </p>
+    </li>
+    <li><strong>Authentication</strong>:
+        <p>Many APIs require authentication, which can be done using API keys, tokens, or other methods.
+            Include
+            authentication information in your requests.</p>
+    </li>
+    <li><strong>Error Handling</strong>:
+        <p>API calls can fail due to various reasons. Implement error handling to gracefully handle cases
+            where
+            the API response indicates an error.</p>
+    </li>
+    <li><strong>Rate Limiting</strong>:
+        <p>APIs often have rate limits to prevent abuse. Be mindful of these limits and follow the
+            guidelines
+            provided in the API documentation.</p>
+    </li>
 
 
-        <h6>Here's an example of Working with the <strong>OpenWeatherMap</strong> API to retrieve weather data:
-        </h6>
-        <div class="code-background">
-            <app-code-template [formInputText]="open_weather_map"></app-code-template>
-            <div class="code">
-                <pre><code [innerHTML]="open_weather_map"></code></pre>
-            </div>
+    <h6>Here's an example of Working with the <strong>OpenWeatherMap</strong> API to retrieve weather data:
+    </h6>
+    <div class="code-background">
+        <app-code-template [formInputText]="open_weather_map"></app-code-template>
+        <div class="code">
+            <pre><code [innerHTML]="open_weather_map"></code></pre>
         </div>
-        <p>Remember to replace <code>"your_api_key"</code> with your actual API key. Working with APIs can be
-            incredibly
-            useful for integrating external data and services into your Python applications.</p>
-    </ol>
-</section>
+    </div>
+    <p>Remember to replace <code>"your_api_key"</code> with your actual API key. Working with APIs can be
+        incredibly
+        useful for integrating external data and services into your Python applications.</p>
+</ol>

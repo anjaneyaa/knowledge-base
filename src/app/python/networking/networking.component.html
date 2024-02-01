@@ -1,18 +1,17 @@
-<section>
-    <h5><strong>Networking in Python</strong></h5>
-    <p>Networking in Python involves communication between computers over a network, whether it's for creating
-        client-server applications, web scraping, or working with APIs. Here's an overview of networking
-        concepts
-        and how to work with networking in Python:</p>
-    <ol>
-        <li><strong>Socket Programming</strong></li>
-        <p>Sockets provide a low-level interface for network communication. The <code>socket</code> module in
-            Python
-            allows you to create sockets for various types of communication (TCP, UDP).</p>
-        <div class="code-background">
-            <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
-            <div class="code">
-                <pre><code>
+<h5><strong>Networking in Python</strong></h5>
+<p>Networking in Python involves communication between computers over a network, whether it's for creating
+    client-server applications, web scraping, or working with APIs. Here's an overview of networking
+    concepts
+    and how to work with networking in Python:</p>
+<ol>
+    <li><strong>Socket Programming</strong></li>
+    <p>Sockets provide a low-level interface for network communication. The <code>socket</code> module in
+        Python
+        allows you to create sockets for various types of communication (TCP, UDP).</p>
+    <div class="code-background">
+        <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+        <div class="code">
+            <pre><code>
 import socket
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -26,23 +25,23 @@ client_socket.send(b"Hello from the server")
 client_socket.close()
 server_socket.close()
 </code></pre>
-            </div>
         </div>
+    </div>
 
-        <li><strong>HTTP Requests with <code>requests</code></strong></li>
-        <p>The <code>requests</code> library simplifies making HTTP requests to web servers and APIs.</p>
-        <pre><code>
+    <li><strong>HTTP Requests with <code>requests</code></strong></li>
+    <p>The <code>requests</code> library simplifies making HTTP requests to web servers and APIs.</p>
+    <pre><code>
 import requests
 
 response = requests.get("https://api.example.com/data")
 data = response.json()
 </code></pre>
 
-        <li><strong>Web Scraping with <code>BeautifulSoup</code></strong></li>
-        <p><code>BeautifulSoup</code> is used for parsing HTML and XML documents, making it useful for web
-            scraping.
-        </p>
-        <pre><code>
+    <li><strong>Web Scraping with <code>BeautifulSoup</code></strong></li>
+    <p><code>BeautifulSoup</code> is used for parsing HTML and XML documents, making it useful for web
+        scraping.
+    </p>
+    <pre><code>
 from bs4 import BeautifulSoup
 import requests
 
@@ -50,12 +49,12 @@ response = requests.get("https://example.com")
 soup = BeautifulSoup(response.content, 'html.parser')
 </code></pre>
 
-        <li><strong>Socket Servers and Clients</strong></li>
-        <p>You can create simple socket servers and clients for communication between computers.</p>
-        <div class="code-background">
-            <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
-            <div class="code">
-                <pre><code>
+    <li><strong>Socket Servers and Clients</strong></li>
+    <p>You can create simple socket servers and clients for communication between computers.</p>
+    <div class="code-background">
+        <app-code-template [formInputText]="'Code can not be copied!'"></app-code-template>
+        <div class="code">
+            <pre><code>
 # Server
 import socket
 
@@ -78,21 +77,20 @@ client_socket.send(b"Hello from the client")
 response = client_socket.recv(1024)
 client_socket.close()
 </code></pre>
-            </div>
         </div>
+    </div>
 
-        <li><strong>Working with APIs</strong></li>
-        <p>Python's <code>requests</code> library and API-specific libraries (e.g., <code>tweepy</code> for
-            Twitter)
-            help you interact with various APIs.</p>
+    <li><strong>Working with APIs</strong></li>
+    <p>Python's <code>requests</code> library and API-specific libraries (e.g., <code>tweepy</code> for
+        Twitter)
+        help you interact with various APIs.</p>
 
-        <li><strong>Networking Libraries</strong></li>
-        <p>There are other networking libraries such as <code>socketserver</code> and <code>asyncio</code> for
-            building
-            network servers and clients, as well as <code>paramiko</code> for SSH communication.</p>
+    <li><strong>Networking Libraries</strong></li>
+    <p>There are other networking libraries such as <code>socketserver</code> and <code>asyncio</code> for
+        building
+        network servers and clients, as well as <code>paramiko</code> for SSH communication.</p>
 
-        <p>Remember to handle exceptions, validate input, and consider security practices when working with
-            networking
-            in Python.</p>
-    </ol>
-</section>
+    <p>Remember to handle exceptions, validate input, and consider security practices when working with
+        networking
+        in Python.</p>
+</ol>
