@@ -15,39 +15,48 @@
     <ul>
         <li><strong>For Loop</strong></li>
         <p>Iterates over a sequence (list, tuple, string, etc.).</p>
-        <pre><code>for item in sequence:
-    # Code to execute for each item in the sequence</code></pre>
-
+        <div class="code-background">
+            <app-code-template [formInputText]="for_loop"></app-code-template>
+            <div class="code">
+                <pre><code [innerHTML]="for_loop"></code></pre>
+            </div>
+        </div>
         <li><strong>While Loop</strong></li>
+        <p>Executes a block of code as long as a condition is True.</p>
+        <div class="code-background">
+            <app-code-template [formInputText]="while_loop"></app-code-template>
+            <div class="code">
+                <pre><code [innerHTML]="while_loop"></code></pre>
+            </div>
+        </div>
     </ul>
-    <p>Executes a block of code as long as a condition is True.</p>
-    <pre><code>while condition:
-    # Code to execute while the condition is True</code></pre>
-
     <li><strong>Break and Continue Statements</strong></li>
     <p>Used to modify the flow of loops.</p>
     <ul>
         <li><strong>Break</strong></li>
         <p>Exits the loop prematurely.</p>
-        <pre><code>for item in sequence:
-    if condition:
-        break</code></pre>
-
-        <li><strong>Continue</strong></li>
-
-        <p>Skips the current iteration and moves to the next.</p>
-        <pre><code>for item in sequence:
-    if condition:
-        continue</code></pre>
-
-        <p>Here's an example demonstrating these control structures:</p>
         <div class="code-background">
-            <app-code-template [formInputText]="control_statement"></app-code-template>
+            <app-code-template [formInputText]="break"></app-code-template>
             <div class="code">
-                <pre><code [innerHTML]="control_statement"></code></pre>
+                <pre><code [innerHTML]="break"></code></pre>
+            </div>
+        </div>
+        <li><strong>Continue</strong></li>
+        <p>Skips the current iteration and moves to the next.</p>
+        <div class="code-background">
+            <app-code-template [formInputText]="continue"></app-code-template>
+            <div class="code">
+                <pre><code [innerHTML]="continue"></code></pre>
             </div>
         </div>
     </ul>
+    <p>Here's an example demonstrating these control structures:</p>
+    <div class="code-background">
+        <app-code-template [formInputText]="control_statement"></app-code-template>
+        <div class="code">
+            <pre><code [innerHTML]="control_statement"></code></pre>
+        </div>
+    </div>
     <p>Control structures help you create more dynamic and responsive programs by allowing you to make
         decisions
         and
