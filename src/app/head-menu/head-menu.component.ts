@@ -1,15 +1,13 @@
 import { Component, HostListener } from '@angular/core';
-import { ClipboardService } from 'ngx-clipboard';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-head-menu',
+  templateUrl: './head-menu.component.html',
+  styleUrls: ['./head-menu.component.css']
 })
-export class AppComponent {
+export class HeadMenuComponent {
   title = 'knowledge-base';
   showButton: boolean = false;
-  items: string[] = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
   @HostListener('window:scroll', [])
   onWindowScroll() {
     if (window.pageYOffset > 300) {

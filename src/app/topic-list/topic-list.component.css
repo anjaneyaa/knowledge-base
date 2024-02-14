@@ -1,0 +1,12 @@
+.vertical-list ul {
+    list-style-type: none;
+    padding: 10;
+    margin: 0;
+    background-color: black;
+    width: 200px;
+  }
+  
+  .vertical-list li {
+    margin-bottom: 10px; /* Adjust spacing between items */
+  }
+  

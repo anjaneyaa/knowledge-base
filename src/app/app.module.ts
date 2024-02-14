@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PythonComponent } from './python/python.component';
 import { AdvancePythonComponent } from './advance-python/advance-python.component';
-import { PythonTopicsComponent } from './python/python-topics/python-topics.component';
 import { CodeTemplateComponent } from './code-template/code-template.component';
 import { ReserveComponent } from './reserve/reserve.component';
 import { BasicSyntaxComponent } from './python/basic-syntax/basic-syntax.component';
@@ -46,13 +45,14 @@ import { PerformanceOptimizationComponent } from './advance-python/performance-o
 import { DynamicTypingAndTypeAnnotationsComponent } from './advance-python/dynamic-typing-and-type-annotations/dynamic-typing-and-type-annotations.component';
 import { UnicodeAndInternationalizationComponent } from './advance-python/unicode-and-internationalization/unicode-and-internationalization.component';
 import { CExtensionsAndCythonComponent } from './advance-python/c-extensions-and-cython/c-extensions-and-cython.component';
+import { TopicListComponent } from './topic-list/topic-list.component';
+import { HeadMenuComponent } from './head-menu/head-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PythonComponent,
     AdvancePythonComponent,
-    PythonTopicsComponent,
     CodeTemplateComponent,
     ReserveComponent,
     BasicSyntaxComponent,
@@ -91,7 +91,9 @@ import { CExtensionsAndCythonComponent } from './advance-python/c-extensions-and
     PerformanceOptimizationComponent,
     DynamicTypingAndTypeAnnotationsComponent,
     UnicodeAndInternationalizationComponent,
-    CExtensionsAndCythonComponent
+    CExtensionsAndCythonComponent,
+    TopicListComponent,
+    HeadMenuComponent
   ],
   imports: [
     BrowserModule,
